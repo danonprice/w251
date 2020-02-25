@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>videoplayback1952.jpg</filename>
+	<path>/Users/DanP/Desktop/w251/homework/week08/MIDS_HW8/images/videoplayback1952.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1000</width>
+		<height>563</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>millenium falcon</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>131</xmin>
+			<ymin>107</ymin>
+			<xmax>721</xmax>
+			<ymax>445</ymax>
+		</bndbox>
+	</object>
+</annotation>
