@@ -1,0 +1,12 @@
+ibmcloud sl vs create --datacenter=lon04 \
+  --hostname=v100a --domain=danonprice.com --image=2263543 \
+  --billing=hourly  --network 1000 --key=1702902 \
+  --flavor AC2_16X120X100 --san
+
+ibmcloud sl vs create --datacenter=lon04 \
+  --hostname=v100b --domain=danonprice.com --image=2263543 \
+  --billing=hourly  --network 1000 --key=1702902 \
+  --flavor AC2_16X120X100 --san
+
+Nvidia api key
+cG1pZ3JtdGpiMXI5MWFvb2lmbDlmNjVkYTU6OTJiYzY4YTAtYTc1NC00ZjU5LWI2N2ItMTQ1NTBkNWJmN2Iy
