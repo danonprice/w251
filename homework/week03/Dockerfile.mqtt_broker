@@ -1,0 +1,10 @@
+FROM alpine
+WORKDIR /
+RUN echo -e "http://nl.alpinelinux.org/alpine/v3.9/main/" > /etc/apk/repositories
+# install mosquitto broker
+RUN echo "nameserver 8.8.8.8" > /etc/resolv.conf && \
+    apk update && \
+    apk add mosquitto
+
+# run mosquitto
+CMD /usr/sbin/mosquitto
