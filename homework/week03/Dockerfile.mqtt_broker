@@ -7,4 +7,5 @@ RUN echo "nameserver 8.8.8.8" > /etc/resolv.conf && \
     apk add mosquitto
 
 # run mosquitto
+CMD hostname -i
 CMD /usr/sbin/mosquitto
