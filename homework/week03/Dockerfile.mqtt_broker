@@ -7,5 +7,7 @@ RUN echo "nameserver 8.8.8.8" > /etc/resolv.conf && \
     apk add mosquitto
 
 # run mosquitto
-CMD hostname -i
 CMD /usr/sbin/mosquitto
+
+# docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container_id>
+# mqtt_broker address = 172.18.0.2

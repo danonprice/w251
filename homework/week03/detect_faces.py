@@ -15,7 +15,9 @@ def on_publish(mqtt_client,userdate,mid):
 
 mqtt_client = mqtt.Client()
 mqtt_client.on_connect = on_connect
-mqtt_client.connect("iot.eclipse.org",1883,60) # socket.timeout: timed out
+
+mqtt_client.connect("172.18.0.2",1883,60) # socket.timeout: timed out
+#mqtt_client.connect("iot.eclipse.org",1883,60) # socket.timeout: timed out
 #mqtt_client.connect("127.0.0.1",1883,60) #ConnectionRefusedError: Connection refused
 #mqtt_client.connect("localhost",1883,60) # OSError: Cannot assign requested address
 #mqtt_client.connect("mosquitto",1883,60) # socket.gaierror: No address associated with hostname
