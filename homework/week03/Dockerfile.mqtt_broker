@@ -10,4 +10,5 @@ RUN echo "nameserver 8.8.8.8" > /etc/resolv.conf && \
 CMD /usr/sbin/mosquitto
 
 # docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container_id>
-# mqtt_broker address = 172.18.0.2
+# mqtt_broker tx2 address = 172.18.0.2
+# mqtt_broker x86 address = 172.19.0.2
