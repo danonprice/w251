@@ -1,3 +1,7 @@
+# sudo docker build -t face_detector -f Dockerfile.face_detector .
+# xhost +
+# sudo docker run -e DISPLAY=$DISPLAY --rm --privileged --network face_detect_net -v /tmp:/tmp -ti face_detector 
+
 # We run an ubuntu arm64v8-based
 FROM ubuntu
 

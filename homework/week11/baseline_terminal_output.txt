@@ -1,0 +1,3151 @@
+root@jetson-tx2:/home/nvidia/w251/homework/week11# docker run -it --rm --net=host --runtime nvidia  -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix:rw --privileged -v /data/videos:/tmp/videos lander
+Using TensorFlow backend.
+2020-04-14 05:20:15.056617: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+/opt/venv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/opt/venv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/opt/venv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/opt/venv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/opt/venv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/opt/venv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/opt/venv/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/opt/venv/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/opt/venv/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/opt/venv/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/opt/venv/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/opt/venv/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+At step  0
+reward:  12.240698511919106
+total rewards  0
+[-0.08701982  0.00216933 -0.67237155  0.08288232  1.94028521  0.86724496
+  0.          1.        ]
+At step  100
+reward:  -9.884109548810443
+total rewards  -240.72917308708094
+Landed it!
+[ 5.76124191e-03 -2.84977134e-02  1.68144500e-07  1.45652229e-07
+  2.24073519e-04 -7.65000929e-07  1.00000000e+00  1.00000000e+00]
+Successful Landing!!!  116
+Total successes are:  1
+[-0.65429895 -0.00915386 -2.44337956 -0.41890581  0.95994258 -1.03783035
+  0.          1.        ]
+At step  200
+reward:  -4.776316391465885
+total rewards  -320.16603070544505
+[-0.01286154 -0.01688954 -0.07992846 -1.10417822 -0.22069392  7.72754033
+  1.          0.        ]
+[ 0.40638189  0.07732912  0.22842524  0.04557637 -0.67420673 -0.66145523
+  1.          0.        ]
+At step  300
+reward:  -150
+total rewards  -470.91868755734714
+[-0.59667554  0.0395073  -0.76049336 -0.62638998  0.28110448 -6.86645253
+  0.          1.        ]
+[-0.77392936 -0.09382996 -1.95521943 -0.52449168  0.375339   -0.58923348
+  1.          1.        ]
+At step  400
+reward:  -3.1109594427002296
+total rewards  -448.23795626771744
+[ 4.33832550e-01  1.62578265e-03  5.31474471e-01 -2.12474995e-01
+ -3.62270057e-01  4.56493537e+00  1.00000000e+00  0.00000000e+00]
+[-2.61277103e-01  6.22668902e-03  6.34230097e-01 -1.38751274e+00
+ -3.93070161e-01 -8.20392545e+00  1.00000000e+00  1.00000000e+00]
+At step  500
+reward:  -10.856863185763416
+total rewards  -371.04488643185834
+[-2.61682940e-01 -1.35328706e-02  1.33380666e-02 -2.03285532e-03
+ -2.24487484e-01 -5.45318765e-08  1.00000000e+00  1.00000000e+00]
+[-0.19947329 -0.01533212  0.4813     -1.40778743 -0.16322458 -8.40987396
+  1.          1.        ]
+At step  600
+reward:  -3.0163117796499765
+total rewards  -400.72838417385094
+[-2.23858309e-01 -6.93809350e-03  3.13542684e-01 -1.10278373e+00
+ -4.90978137e-02 -8.50174713e+00  1.00000000e+00  1.00000000e+00]
+[ 3.53268909e-01 -8.50212749e-02  1.85098171e+00 -4.75091722e-01
+ -3.67311060e-01 -2.13433888e-07  0.00000000e+00  1.00000000e+00]
+At step  700
+reward:  -10.16615804284811
+total rewards  -300.9236760904796
+[ 0.17176876 -0.02198743 -0.10888478 -0.01576017  0.1156498  -0.09257966
+  1.          1.        ]
+[ 0.48801632 -0.05197794  1.80248658 -1.45135975 -0.70861292  7.39061991
+  1.          0.        ]
+At step  800
+reward:  -4.334131487261416
+total rewards  -444.10953745523744
+[ 2.09129620e-01 -3.12941869e-04 -7.66274035e-02 -1.74959951e-01
+ -5.38997948e-01  2.79573854e+00  1.00000000e+00  0.00000000e+00]
+[-0.22942328 -0.03084516 -0.82380883  0.03848162  0.08300493 -1.06920012
+  1.          1.        ]
+At step  900
+reward:  -17.60093936179405
+total rewards  -212.50680314809955
+[-0.41838832 -0.0965661  -1.4402504  -0.22290611  0.20605031 -0.67415818
+  1.          1.        ]
+[-3.34726667e-01 -8.99861987e-02 -2.16959588e+00 -7.02034156e-01
+  4.51276004e-01 -2.60000832e-07  1.00000000e+00  1.00000000e+00]
+At step  1000
+reward:  -11.804919462002655
+total rewards  -108.79014328711253
+[ 0.35135069 -0.0021691  -0.31785115 -0.0066837   0.95994794  0.881447
+  0.          1.        ]
+At step  1100
+reward:  9.878230030237878
+total rewards  -365.5090391581011
+[ 0.11257706 -0.02429761  0.11779879 -1.06680012  0.03582075 -8.00518862
+  1.          1.        ]
+[-1.27740574e-01 -2.85159524e-02 -7.01002280e-02  3.56510554e-08
+  1.60987649e-04 -2.93076804e-07  1.00000000e+00  1.00000000e+00]
+At step  1200
+reward:  -5.721296323852539
+total rewards  -477.3336410264967
+[ 0.53066683 -0.03852755  0.95513185 -0.3157346  -0.38412589  5.23518594
+  1.          0.        ]
+[-4.38654995e-01 -2.81378587e-03 -4.58312710e-01 -6.41067452e-01
+  1.60538852e-01 -7.05889638e+00  0.00000000e+00  1.00000000e+00]
+At step  1300
+reward:  -2.618763896378531
+total rewards  -258.4885323580986
+[ 9.52868843e-01 -7.30313619e-03  1.64856164e+00 -8.15923850e-01
+ -1.18580687e+00 -9.91938464e+00  1.00000000e+00  0.00000000e+00]
+At step  1400
+reward:  -150
+total rewards  -458.9048991060318
+[ 0.20852327 -0.0289432   0.67063785 -0.07041101 -0.0673959  -3.04117362
+  1.          1.        ]
+[-0.60703323 -0.14017951 -1.01577004 -0.03805082  0.04741171 -0.36818997
+  1.          1.        ]
+At step  1500
+reward:  4.499524217581112
+total rewards  -445.19303114514287
+[ 0.05424051 -0.02045945  0.25102552 -1.35136859  0.1499711  -8.35630862
+  1.          1.        ]
+[-0.07684727 -0.01281626  0.13792502 -0.63417583 -0.26094279  6.98510043
+  1.          0.        ]
+At step  1600
+reward:  -10.478998275417784
+total rewards  -271.2598431281991
+[ 0.93490715  0.09497548  2.94606622 -0.41958931 -2.37521243 -2.6898632
+  1.          0.        ]
+Landed it!
+[-1.55432701e-02 -2.84992393e-02  1.81056521e-07  4.24364291e-08
+  1.23293707e-04 -8.19010287e-07  1.00000000e+00  1.00000000e+00]
+Successful Landing!!!  1688
+Total successes are:  2
+At step  1700
+reward:  -13.271614230491283
+total rewards  164.01841439838063
+[-5.30610514e-01  7.92659823e-02 -7.08088795e-01  1.05502249e-02
+ -2.20876057e-02  9.44001310e-08  1.00000000e+00  1.00000000e+00]
+At step  1800
+reward:  -2.235622775400902
+total rewards  -309.4584842255068
+[-1.13944149e-01 -2.63225492e-02  3.35802262e-03 -1.29627811e+00
+ -3.23689133e-02  7.95566241e+00  1.00000000e+00  1.00000000e+00]
+[-0.25010324 -0.02826759 -0.60781272 -1.30287679  0.07695098 -8.23274676
+  1.          1.        ]
+At step  1900
+reward:  20.935294528802274
+total rewards  -387.99188730264376
+[-0.12241726 -0.00761933 -0.16761706 -0.42678867  0.40780413 -5.6697909
+  0.          1.        ]
+[-0.62104833  0.00614656 -1.35883109 -0.15554837  0.76234609 -2.47574695
+  0.          1.        ]
+At step  2000
+reward:  6.842240909753899
+total rewards  -286.9324131688853
+[ 0.0833765  -0.02513198  0.21500635 -1.37083562  0.05291598 -8.66792615
+  1.          1.        ]
+[ 4.99429512e-01 -1.00927203e-01  1.20533419e+00 -9.07506545e-02
+ -1.12169325e-01 -2.28126945e-08  1.00000000e+00  1.00000000e+00]
+At step  2100
+reward:  -3.6899772071678676
+total rewards  -214.90383101301592
+[-0.59896488 -0.1532844  -1.71130006 -1.74877887  0.25829446  7.2028834
+  1.          1.        ]
+[ 0.30221252 -0.0324588   0.80942162 -0.3171676  -0.0334999  -1.57402833
+  1.          1.        ]
+At step  2200
+reward:  -11.271830668889145
+total rewards  -192.23488668572944
+[ 0.84043293 -0.01616921 -1.02536241 -1.0723274   0.10431316  5.29064306
+  1.          0.        ]
+[-1.74240494e-01 -2.60164436e-02 -7.28547557e-08 -6.72781147e-08
+ -4.55480926e-02  2.22542250e-07  1.00000000e+00  1.00000000e+00]
+At step  2300
+reward:  -2.8077532804376863
+total rewards  -214.30899841761382
+[ 1.21784592e-01 -2.85367664e-02 -5.22286866e-09 -2.17612776e-08
+  2.93388061e-04  2.36443943e-08  1.00000000e+00  1.00000000e+00]
+At step  2400
+reward:  -5.404959994719861
+total rewards  -414.5801998336463
+[ 0.04256773 -0.0151314   0.08805388 -0.92058966 -0.24449041  7.79885292
+  1.          0.        ]
+[ 0.2762845   0.02645393 -0.21246155 -0.05242589 -0.5450142   0.62814442
+  1.          0.        ]
+At step  2500
+reward:  -21.110515700276505
+total rewards  -672.2504854069421
+[ 0.74528751 -0.08949084  1.66549635  0.30792854 -2.18221569 -3.89625486
+  1.          0.        ]
+[ 0.38000784  0.01016155 -0.32394111 -0.11969811 -0.44342402  1.26361688
+  1.          0.        ]
+Landed it!
+[-2.06413269e-02 -2.84979518e-02  1.28575607e-07  3.92052944e-08
+  4.05535277e-04 -5.81644561e-07  1.00000000e+00  1.00000000e+00]
+Successful Landing!!!  2594
+Total successes are:  3
+At step  2600
+reward:  -15.484654154525947
+total rewards  177.42881277978097
+[-0.10031672 -0.02288181 -0.04433275 -1.33669451  0.10023077 -8.38776143
+  1.          1.        ]
+Landed it!
+[-5.88490486e-02 -2.85445388e-02  3.21957832e-08 -2.01884834e-08
+  2.84249953e-04 -1.45736086e-07  1.00000000e+00  1.00000000e+00]
+Successful Landing!!!  2693
+Total successes are:  4
+At step  2700
+reward:  -16.465722314185484
+total rewards  136.11242267593582
+[-6.90934896e-01  1.27918727e-01 -1.92977285e+00 -2.57426103e-01
+  1.97755679e-01 -1.28635082e-08  1.00000000e+00  1.00000000e+00]
+[-0.29661746 -0.04772846 -1.47504218 -1.20976671  0.34087461 -7.66043345
+  0.          1.        ]
+At step  2800
+reward:  -20.291880053813678
+total rewards  -141.07541827767005
+[-7.16017771e-01 -3.86533101e-03 -2.14653524e+00 -1.06875653e+00
+  5.95353305e-01 -6.33603032e+00  0.00000000e+00  1.00000000e+00]
+At step  2900
+reward:  -7.0381649331883525
+total rewards  -359.63798298531054
+[-0.2718863  -0.04272448 -1.67532619 -1.28016663  0.19431113  7.06824748
+  1.          0.        ]
+[-0.67440026 -0.06882974 -2.27673864 -1.22712729  0.35636371 -7.0222524
+  0.          1.        ]
+At step  3000
+reward:  -12.450093585584
+total rewards  -320.8293857228304
+[ 0.63139763 -0.10438859  1.02792287 -2.62707583 -0.08285084  0.09319433
+  1.          1.        ]
+[ 6.74468803e-01 -1.44655794e-01  2.40643485e+00 -6.25453048e-01
+ -3.71516436e-01  3.22947775e-07  1.00000000e+00  1.00000000e+00]
+At step  3100
+reward:  -8.90314964905218
+total rewards  -306.07399858361686
+[ 0.27770309  0.43635846  1.08681075 -1.62833701 -0.65039891 -0.54003461
+  0.          0.        ]
+[ 1.20457935e-01  2.85711924e-03 -5.41957537e-01  3.12921339e-02
+  3.33866262e+00  2.54640857e-01  0.00000000e+00  0.00000000e+00]
+At step  3200
+reward:  -3.195505136281832
+total rewards  -237.99731442996753
+[-0.01026201 -0.02326841 -0.08176109 -1.24076345 -0.07529901  8.75524139
+  1.          1.        ]
+[ 0.30274954  0.06036544  0.95849538 -2.38972855 -0.58755362 -0.40640803
+  0.          0.        ]
+At step  3300
+reward:  -13.620621793799728
+total rewards  -245.80025808417676
+[ 0.62728939 -0.0071783   1.39943933 -2.78031137 -0.69113386 -0.33238163
+  1.          0.        ]
+[-0.58701115  0.04599796 -0.47000706 -0.34562042  0.0333939  -3.07437801
+  0.          0.        ]
+At step  3400
+reward:  -14.064730720387558
+total rewards  -237.4182391944691
+[-0.36876726  0.12321802 -0.88233256 -2.20487065  0.35550594  0.13655876
+  0.          0.        ]
+[-0.53129287  0.01150542 -1.12561409 -0.04282633  0.83061934 -0.46030629
+  0.          1.        ]
+At step  3500
+reward:  9.421627871589445
+total rewards  -124.19545147462105
+[ 0.19593115  0.19045187  0.76634185 -2.32166884 -0.74340844 -0.57032522
+  0.          0.        ]
+At step  3600
+reward:  0.37098407994913685
+total rewards  -237.70810519695974
+[ 0.54768791 -0.09262616  0.91518497 -0.78349998 -0.11605158  7.62512143
+  1.          0.        ]
+[ 0.05282707  0.09819537  0.21387263 -2.55006536 -0.15900238  0.02346372
+  0.          0.        ]
+At step  3700
+reward:  -14.60498919089639
+total rewards  -289.0322722658266
+[ 0.70229187  0.16539803  2.0489227  -2.1358579  -0.74538022 -0.37226979
+  0.          0.        ]
+[ 0.4543684  -0.01725621  0.34667397 -0.2076729   0.21484382 -1.34749524
+  1.          1.        ]
+At step  3800
+reward:  -4.907341057014466
+total rewards  -380.56874504503537
+[ 7.05128670e-02 -2.85670217e-02  1.57761276e-01 -2.27818622e-01
+ -1.77122653e-04 -1.22031681e+00  1.00000000e+00  1.00000000e+00]
+[-0.37737341 -0.06696333 -1.04186217 -2.38452572  0.49015662 -0.05898898
+  0.          1.        ]
+At step  3900
+reward:  -150
+total rewards  -336.4632043323274
+[ 0.4695612  -0.08125398  1.64054966 -1.41514884 -0.34067392  7.48660342
+  1.          1.        ]
+[ 0.30528517  0.00346065 -0.34248145 -0.28541748  0.28777325 -1.13610347
+  1.          1.        ]
+[ 0.41091747 -0.00920531  0.85372663 -0.72528924 -0.13707075  7.34502665
+  1.          0.        ]
+training model model
+2020-04-14 05:24:31.581521: W tensorflow/core/platform/profile_utils/cpu_utils.cc:98] Failed to find bogomips in /proc/cpuinfo; cannot determine CPU frequency
+2020-04-14 05:24:31.584949: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x132eae30 executing computations on platform Host. Devices:
+2020-04-14 05:24:31.585119: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2020-04-14 05:24:31.628487: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcuda.so.1
+2020-04-14 05:24:31.772290: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:972] ARM64 does not support NUMA - returning NUMA node zero
+2020-04-14 05:24:31.772917: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x14709150 executing computations on platform CUDA. Devices:
+2020-04-14 05:24:31.772978: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): NVIDIA Tegra X2, Compute Capability 6.2
+2020-04-14 05:24:31.776340: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:972] ARM64 does not support NUMA - returning NUMA node zero
+2020-04-14 05:24:31.778472: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: NVIDIA Tegra X2 major: 6 minor: 2 memoryClockRate(GHz): 1.3
+pciBusID: 0000:00:00.0
+2020-04-14 05:24:31.778851: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-04-14 05:24:31.832151: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-04-14 05:24:31.873569: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-04-14 05:24:31.910011: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-04-14 05:24:31.954244: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-04-14 05:24:31.978696: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-04-14 05:24:32.068502: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-04-14 05:24:32.068857: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:972] ARM64 does not support NUMA - returning NUMA node zero
+2020-04-14 05:24:32.069185: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:972] ARM64 does not support NUMA - returning NUMA node zero
+2020-04-14 05:24:32.069425: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-04-14 05:24:32.072284: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-04-14 05:24:34.955211: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-04-14 05:24:34.955330: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-04-14 05:24:34.955392: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-04-14 05:24:34.961794: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:972] ARM64 does not support NUMA - returning NUMA node zero
+2020-04-14 05:24:34.963030: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:972] ARM64 does not support NUMA - returning NUMA node zero
+2020-04-14 05:24:34.963860: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 2707 MB memory) -> physical GPU (device: 0, name: NVIDIA Tegra X2, pci bus id: 0000:00:00.0, compute capability: 6.2)
+WARNING:tensorflow:From /opt/venv/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:422: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+Epoch 1/10
+2020-04-14 05:24:36.976997: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+4001/4001 [==============================] - 4s 1ms/step - loss: 601.1751 - accuracy: 0.0000e+00
+Epoch 2/10
+4001/4001 [==============================] - 2s 577us/step - loss: 571.2504 - accuracy: 0.0000e+00
+Epoch 3/10
+4001/4001 [==============================] - 2s 573us/step - loss: 561.3523 - accuracy: 0.0000e+00
+Epoch 4/10
+4001/4001 [==============================] - 2s 587us/step - loss: 554.9945 - accuracy: 0.0000e+00
+Epoch 5/10
+4001/4001 [==============================] - 2s 577us/step - loss: 547.5303 - accuracy: 0.0000e+00
+Epoch 6/10
+4001/4001 [==============================] - 2s 569us/step - loss: 541.0460 - accuracy: 0.0000e+00
+Epoch 7/10
+4001/4001 [==============================] - 2s 551us/step - loss: 535.6093 - accuracy: 0.0000e+00
+Epoch 8/10
+4001/4001 [==============================] - 2s 554us/step - loss: 531.2023 - accuracy: 0.0000e+00
+Epoch 9/10
+4001/4001 [==============================] - 2s 559us/step - loss: 527.4364 - accuracy: 0.0000e+00
+Epoch 10/10
+4001/4001 [==============================] - 2s 557us/step - loss: 524.0344 - accuracy: 0.0000e+00
+At step  4000
+reward:  -8.42582441900913
+total rewards  -174.18864324050912
+[ 0.19247618  0.3105722   2.53843927 -1.22066932 -0.29361367  1.35917664
+  0.          0.        ]
+At step  4100
+reward:  -4.680822952870604
+total rewards  9.689233037142255
+[ 0.46528559  0.34503556 -1.31789136 -2.13643773  1.99018443  0.19256582
+  0.          0.        ]
+At step  4200
+reward:  4.885259698925516
+total rewards  -38.5536930874296
+At step  4300
+reward:  7.674482394907225
+total rewards  210.4588427847559
+At step  4400
+reward:  2.1277186113346445
+total rewards  -372.8283069609267
+[-7.24557567e-01 -1.09967440e-01 -2.38982010e+00  1.41643100e-01
+ -8.84796306e-02  5.41138547e-08  0.00000000e+00  1.00000000e+00]
+At step  4500
+reward:  -10.834140003043274
+total rewards  -332.7346506563364
+[ 0.22250328  0.04288564 -1.98921792 -0.92494255  1.67347217  3.7043883
+  0.          1.        ]
+At step  4600
+reward:  -3.466515729126375
+total rewards  -36.29116793457729
+[ 0.35525141 -0.00219976  1.85802205  0.1057988  -1.9154067  -1.27155892
+  1.          0.        ]
+At step  4700
+reward:  -8.68040054507993
+total rewards  -227.50052499576114
+[ 2.19509792e-01  6.39296214e-03  1.15690700e+00 -4.75732274e-01
+  1.61407441e-01  7.05820529e+00  1.00000000e+00  1.00000000e+00]
+At step  4800
+reward:  3.362900096072097
+total rewards  -299.8837448785919
+[-0.00594549  1.1371542   1.73602613 -0.86596425 -1.65049422 -0.16250881
+  0.          0.        ]
+At step  4900
+reward:  0.2941846550962534
+total rewards  -200.7193774000924
+[-0.41384225  0.89706221  0.8123827  -1.69853168 -2.25019908 -0.83606919
+  0.          0.        ]
+training model model
+Epoch 1/10
+5001/5001 [==============================] - 3s 634us/step - loss: 450.0901 - accuracy: 0.0000e+00
+Epoch 2/10
+5001/5001 [==============================] - 3s 588us/step - loss: 445.4621 - accuracy: 0.0000e+00
+Epoch 3/10
+5001/5001 [==============================] - 3s 592us/step - loss: 441.1521 - accuracy: 0.0000e+00
+Epoch 4/10
+5001/5001 [==============================] - 3s 591us/step - loss: 437.1499 - accuracy: 0.0000e+00
+Epoch 5/10
+5001/5001 [==============================] - 3s 594us/step - loss: 433.4280 - accuracy: 0.0000e+00
+Epoch 6/10
+5001/5001 [==============================] - 3s 607us/step - loss: 430.4136 - accuracy: 0.0000e+00
+Epoch 7/10
+5001/5001 [==============================] - 3s 587us/step - loss: 427.5186 - accuracy: 0.0000e+00
+Epoch 8/10
+5001/5001 [==============================] - 3s 587us/step - loss: 425.0400 - accuracy: 0.0000e+00
+Epoch 9/10
+5001/5001 [==============================] - 3s 622us/step - loss: 422.8619 - accuracy: 0.0000e+00
+Epoch 10/10
+5001/5001 [==============================] - 3s 605us/step - loss: 421.0815 - accuracy: 0.0000e+00
+At step  5000
+reward:  0.7977282924652099
+total rewards  -233.53315116159567
+[ 0.33346453  0.73432389 -1.86155176 -1.58348348  1.22497737 -0.68271812
+  0.          0.        ]
+At step  5100
+reward:  1.0719173585097184
+total rewards  -14.348396378263544
+At step  5200
+reward:  8.840619054243229
+total rewards  -170.47184531972425
+[ 1.41307545e-01 -7.55112966e-04  4.74269152e-01  1.24242624e-01
+ -1.86472571e+00 -1.15610687e+00  1.00000000e+00  0.00000000e+00]
+At step  5300
+reward:  12.016270283667266
+total rewards  -122.44221016898938
+[ 0.50599003 -0.04122149  1.51568143 -0.24296787  0.00535856 -0.71827078
+  1.          1.        ]
+At step  5400
+reward:  0.2842564102517171
+total rewards  -81.85306036391842
+At step  5500
+reward:  -3.696798468518172
+total rewards  -110.91212356505594
+At step  5600
+reward:  -6.708769997989466
+total rewards  -162.5430367951528
+At step  5700
+reward:  -30.447445575417476
+total rewards  -367.9066121546069
+[ 0.31821852 -0.05024373 -0.08042698  0.06474193  1.49882329  0.39025593
+  0.          1.        ]
+At step  5800
+reward:  -8.897441980902316
+total rewards  -68.11518270442967
+At step  5900
+reward:  -36.350169293424806
+total rewards  132.4519612160895
+Landed it!
+[-9.62481499e-02  1.55607859e-06  1.14137461e-01 -1.23304884e-04
+  1.28627603e-03 -3.26665201e-05  1.00000000e+00  1.00000000e+00]
+Successful Landing!!!  5991
+Total successes are:  5
+training model model
+Epoch 1/10
+6001/6001 [==============================] - 6s 964us/step - loss: 396.6132 - accuracy: 0.0000e+00
+Epoch 2/10
+6001/6001 [==============================] - 6s 957us/step - loss: 395.4527 - accuracy: 0.0000e+00
+Epoch 3/10
+6001/6001 [==============================] - 5s 913us/step - loss: 394.0541 - accuracy: 0.0000e+00
+Epoch 4/10
+6001/6001 [==============================] - 6s 927us/step - loss: 392.7998 - accuracy: 0.0000e+00
+Epoch 5/10
+6001/6001 [==============================] - 6s 961us/step - loss: 391.2939 - accuracy: 0.0000e+00
+Epoch 6/10
+6001/6001 [==============================] - 5s 901us/step - loss: 390.2388 - accuracy: 0.0000e+00
+Epoch 7/10
+6001/6001 [==============================] - 6s 939us/step - loss: 388.8816 - accuracy: 0.0000e+00
+Epoch 8/10
+6001/6001 [==============================] - 6s 947us/step - loss: 387.8370 - accuracy: 0.0000e+00
+Epoch 9/10
+6001/6001 [==============================] - 5s 908us/step - loss: 386.6667 - accuracy: 0.0000e+00
+Epoch 10/10
+6001/6001 [==============================] - 6s 938us/step - loss: 385.3635 - accuracy: 0.0000e+00
+At step  6000
+reward:  -1.7003124303498944
+total rewards  201.03214957406033
+At step  6100
+reward:  -2.144328861825964
+total rewards  138.17338132554605
+[-1.00236737  0.19038349 -2.76950932 -0.90291023  0.63766211 -0.15128453
+  0.          0.        ]
+At step  6200
+reward:  4.284704589345676
+total rewards  -216.61146456029343
+At step  6300
+reward:  2.718511589387378
+total rewards  -144.39238971491463
+At step  6400
+reward:  -2.672360929934146
+total rewards  -389.5996294174215
+[ 0.80402699 -0.07556905  0.57099517  0.1761277  -1.75776732 -0.58788975
+  0.          0.        ]
+At step  6500
+reward:  -7.488072148031633
+total rewards  -226.86049479429536
+At step  6600
+reward:  -3.034454758252044
+total rewards  -254.7688608264915
+[-0.85256063  0.25267316 -1.89420923 -0.74959109  0.85545367  0.16903142
+  0.          0.        ]
+At step  6700
+reward:  -7.564105347864406
+total rewards  -70.33741670958443
+[-0.06182308 -0.0241862   0.69837562 -0.11491431 -0.07903458  0.65909497
+  1.          1.        ]
+At step  6800
+reward:  1.1237991822361946
+total rewards  -145.80573100365183
+At step  6900
+reward:  8.873016739771032
+total rewards  -209.23515461209675
+[ 0.07896328  0.0061025   1.45354462  0.07918678 -2.06408    -1.06993937
+  0.          0.        ]
+training model model
+Epoch 1/10
+7001/7001 [==============================] - 7s 951us/step - loss: 350.4094 - accuracy: 0.0000e+00
+Epoch 2/10
+7001/7001 [==============================] - 7s 939us/step - loss: 348.9784 - accuracy: 0.0000e+00
+Epoch 3/10
+7001/7001 [==============================] - 7s 961us/step - loss: 347.7069 - accuracy: 0.0000e+00
+Epoch 4/10
+7001/7001 [==============================] - 6s 916us/step - loss: 346.4565 - accuracy: 0.0000e+00
+Epoch 5/10
+7001/7001 [==============================] - 7s 933us/step - loss: 345.5175 - accuracy: 0.0000e+00
+Epoch 6/10
+7001/7001 [==============================] - 6s 915us/step - loss: 344.0125 - accuracy: 0.0000e+00
+Epoch 7/10
+7001/7001 [==============================] - 6s 917us/step - loss: 342.7999 - accuracy: 0.0000e+00
+Epoch 8/10
+7001/7001 [==============================] - 6s 907us/step - loss: 341.4887 - accuracy: 0.0000e+00
+Epoch 9/10
+7001/7001 [==============================] - 6s 922us/step - loss: 340.3402 - accuracy: 0.0000e+00
+Epoch 10/10
+7001/7001 [==============================] - 7s 934us/step - loss: 339.1693 - accuracy: 0.0000e+00
+At step  7000
+reward:  -6.28427611821707
+total rewards  -65.1849173118195
+At step  7100
+reward:  -9.342649342899309
+total rewards  140.58965527617283
+At step  7200
+reward:  8.519183247899475
+total rewards  109.94616881855987
+At step  7300
+reward:  -0.3018960835939392
+total rewards  86.70247624926388
+At step  7400
+reward:  36.35370399056274
+total rewards  109.96531401982597
+At step  7500
+reward:  31.95225360951953
+total rewards  37.10252181502916
+At step  7600
+reward:  -0.8976412296917758
+total rewards  58.0289369840801
+At step  7700
+reward:  -5.356341565457714
+total rewards  80.26972651221634
+At step  7800
+reward:  30.356767702333926
+total rewards  4.007073059853589
+At step  7900
+reward:  3.8920820670432477
+total rewards  10.494402852878968
+training model model
+Epoch 1/10
+8001/8001 [==============================] - 7s 913us/step - loss: 354.5376 - accuracy: 0.0000e+00
+Epoch 2/10
+8001/8001 [==============================] - 8s 949us/step - loss: 352.7765 - accuracy: 0.0000e+00
+Epoch 3/10
+8001/8001 [==============================] - 8s 956us/step - loss: 351.5987 - accuracy: 0.0000e+00
+Epoch 4/10
+8001/8001 [==============================] - 7s 927us/step - loss: 350.0097 - accuracy: 0.0000e+00
+Epoch 5/10
+8001/8001 [==============================] - 7s 929us/step - loss: 348.9139 - accuracy: 0.0000e+00
+Epoch 6/10
+8001/8001 [==============================] - 7s 926us/step - loss: 347.5706 - accuracy: 0.0000e+00
+Epoch 7/10
+8001/8001 [==============================] - 8s 942us/step - loss: 346.2832 - accuracy: 0.0000e+00
+Epoch 8/10
+8001/8001 [==============================] - 7s 873us/step - loss: 345.2129 - accuracy: 0.0000e+00
+Epoch 9/10
+8001/8001 [==============================] - 7s 897us/step - loss: 344.1014 - accuracy: 0.0000e+00
+Epoch 10/10
+8001/8001 [==============================] - 7s 912us/step - loss: 342.9113 - accuracy: 0.0000e+00
+At step  8000
+reward:  -2.0802946082512515
+total rewards  -43.27525326304823
+At step  8100
+reward:  -6.4025864295764165
+total rewards  -79.66031911425041
+Landed it!
+[-8.47714424e-02 -1.04569753e-03  9.64228610e-02 -2.70968125e-05
+  3.59504693e-03 -6.13844774e-06  1.00000000e+00  1.00000000e+00]
+Successful Landing!!!  8106
+Total successes are:  6
+At step  8200
+reward:  -7.093576756416421
+total rewards  288.9370586188906
+[ 1.01173058  0.28609453  1.4003671  -0.23892087  0.060571    0.12632575
+  0.          0.        ]
+At step  8300
+reward:  -2.4745763173951105
+total rewards  -180.41702326449752
+At step  8400
+reward:  -3.1729493063058425
+total rewards  -183.24681221684017
+[-1.00576695 -0.04758405 -1.92001629 -0.67758354 -0.4061057  -0.59414021
+  0.          0.        ]
+At step  8500
+reward:  5.631625046268065
+total rewards  -221.5326649534008
+At step  8600
+reward:  -13.235654824034334
+total rewards  -249.34471569635755
+[-1.01112118  0.24424644 -1.36110274 -0.41074422 -0.53314555 -0.65088077
+  0.          0.        ]
+At step  8700
+reward:  3.6444197673426673
+total rewards  -192.60395258803644
+At step  8800
+reward:  5.343933227528472
+total rewards  -191.1915653386383
+At step  8900
+reward:  -13.02814543264184
+total rewards  -404.274200035028
+training model model
+Epoch 1/10
+9001/9001 [==============================] - 8s 939us/step - loss: 331.7273 - accuracy: 0.0000e+00
+Epoch 2/10
+9001/9001 [==============================] - 8s 918us/step - loss: 330.5968 - accuracy: 0.0000e+00
+Epoch 3/10
+9001/9001 [==============================] - 8s 927us/step - loss: 329.6427 - accuracy: 0.0000e+00
+Epoch 4/10
+9001/9001 [==============================] - 8s 920us/step - loss: 328.5119 - accuracy: 0.0000e+00
+Epoch 5/10
+9001/9001 [==============================] - 8s 904us/step - loss: 327.6451 - accuracy: 0.0000e+00
+Epoch 6/10
+9001/9001 [==============================] - 8s 922us/step - loss: 326.8705 - accuracy: 0.0000e+00
+Epoch 7/10
+9001/9001 [==============================] - 8s 901us/step - loss: 325.7950 - accuracy: 0.0000e+00
+Epoch 8/10
+9001/9001 [==============================] - 9s 945us/step - loss: 325.0556 - accuracy: 0.0000e+00
+Epoch 9/10
+9001/9001 [==============================] - 8s 911us/step - loss: 324.2033 - accuracy: 0.0000e+00
+Epoch 10/10
+9001/9001 [==============================] - 8s 918us/step - loss: 323.4743 - accuracy: 0.0000e+00
+At step  9000
+reward:  -7.710923457718643
+total rewards  -175.76582245698705
+[-1.0036337  -0.12740907 -0.94826595 -0.40812336  0.47528902  0.5768826
+  0.          0.        ]
+At step  9100
+reward:  -2.95270245676275
+total rewards  -145.36507150800037
+At step  9200
+reward:  -7.196129442156635
+total rewards  -250.21667799285305
+[ 1.00373764  0.07009016  1.68522263 -0.47186491 -0.36538434 -0.09208343
+  0.          0.        ]
+At step  9300
+reward:  -5.4005418325625465
+total rewards  -222.23400386142134
+At step  9400
+reward:  -2.245902651502323
+total rewards  -104.73046261149042
+At step  9500
+reward:  7.7573947370357015
+total rewards  -106.28569710442245
+At step  9600
+reward:  -1.7737972036248035
+total rewards  -240.6392806542038
+At step  9700
+reward:  2.9536495606104722
+total rewards  -336.1686410834555
+At step  9800
+reward:  48.743999488284835
+total rewards  -217.40554420690205
+[-0.31676183 -0.0432779   0.96714298  0.34060544 -1.57824934 -0.4265728
+  1.          0.        ]
+At step  9900
+reward:  -2.53909624171257
+total rewards  -106.77579884591655
+training model model
+Epoch 1/10
+10001/10001 [==============================] - 9s 937us/step - loss: 316.1703 - accuracy: 0.0000e+00
+Epoch 2/10
+10001/10001 [==============================] - 9s 911us/step - loss: 314.8447 - accuracy: 0.0000e+00
+Epoch 3/10
+10001/10001 [==============================] - 9s 902us/step - loss: 314.1197 - accuracy: 0.0000e+00
+Epoch 4/10
+10001/10001 [==============================] - 9s 900us/step - loss: 313.2587 - accuracy: 0.0000e+00
+Epoch 5/10
+10001/10001 [==============================] - 9s 893us/step - loss: 312.5966 - accuracy: 0.0000e+00
+Epoch 6/10
+10001/10001 [==============================] - 9s 913us/step - loss: 311.9223 - accuracy: 0.0000e+00
+Epoch 7/10
+10001/10001 [==============================] - 9s 915us/step - loss: 311.0440 - accuracy: 0.0000e+00
+Epoch 8/10
+10001/10001 [==============================] - 9s 911us/step - loss: 310.4595 - accuracy: 0.0000e+00
+Epoch 9/10
+10001/10001 [==============================] - 9s 899us/step - loss: 309.7805 - accuracy: 0.0000e+00
+Epoch 10/10
+10001/10001 [==============================] - 9s 911us/step - loss: 309.0434 - accuracy: 0.0000e+00
+At step  10000
+reward:  4.727466322890937
+total rewards  -175.92512501972723
+[ 0.32665901 -0.0339132  -1.46610355 -0.3180107  -0.00811561 -2.18713919
+  1.          1.        ]
+At step  10100
+reward:  -3.359371580052319
+total rewards  -147.8483723389504
+At step  10200
+reward:  5.820474169264836
+total rewards  -340.77108652502045
+[-0.32688704  0.01736212  1.00497945 -0.72089434 -0.05142456 -4.11403116
+  0.          1.        ]
+At step  10300
+reward:  -2.751002040369895
+total rewards  -175.69770887024637
+At step  10400
+reward:  -7.279856765980165
+total rewards  -327.53008525395154
+[-0.55820856 -0.13350462  0.76778682  0.31889333 -1.56469965 -0.98957491
+  0.          0.        ]
+At step  10500
+reward:  9.740798074691435
+total rewards  -205.93526362184406
+[-0.13861599 -0.02749721  0.84072065 -0.63449044  0.00960113 -3.86379178
+  1.          1.        ]
+At step  10600
+reward:  5.401799163325609
+total rewards  -89.12286541849956
+[ 0.06176796 -0.0157268   0.73766685 -0.07400823  0.24580736 -0.50513967
+  0.          1.        ]
+At step  10700
+reward:  1.4801281216900313
+total rewards  -158.61229071831914
+At step  10800
+reward:  -5.291935706564548
+total rewards  -361.2844144161086
+[-0.32339053  0.00555239 -0.97156247 -1.48125405  0.90838563  0.29875082
+  0.          0.        ]
+At step  10900
+reward:  3.784441919496337
+total rewards  10.271904280065566
+training model model
+Epoch 1/10
+11001/11001 [==============================] - 10s 933us/step - loss: 294.2964 - accuracy: 0.0000e+00
+Epoch 2/10
+11001/11001 [==============================] - 10s 907us/step - loss: 293.6282 - accuracy: 0.0000e+00
+Epoch 3/10
+11001/11001 [==============================] - 10s 921us/step - loss: 292.8926 - accuracy: 0.0000e+00
+Epoch 4/10
+11001/11001 [==============================] - 10s 927us/step - loss: 292.3259 - accuracy: 0.0000e+00
+Epoch 5/10
+11001/11001 [==============================] - 10s 933us/step - loss: 291.5968 - accuracy: 0.0000e+00
+Epoch 6/10
+11001/11001 [==============================] - 10s 919us/step - loss: 291.0073 - accuracy: 0.0000e+00
+Epoch 7/10
+11001/11001 [==============================] - 9s 861us/step - loss: 290.3585 - accuracy: 0.0000e+00
+Epoch 8/10
+11001/11001 [==============================] - 10s 918us/step - loss: 289.8481 - accuracy: 0.0000e+00
+Epoch 9/10
+11001/11001 [==============================] - 10s 893us/step - loss: 288.8925 - accuracy: 0.0000e+00
+Epoch 10/10
+11001/11001 [==============================] - 10s 901us/step - loss: 288.6061 - accuracy: 0.0000e+00
+At step  11000
+reward:  0.5906242517258944
+total rewards  -179.79417587461396
+[ 0.05023251 -0.02358996  2.18316539 -0.13870317  0.0830166  -1.64118099
+  1.          1.        ]
+At step  11100
+reward:  2.958536901883997
+total rewards  -65.33386074497051
+At step  11200
+reward:  0.0781784265869162
+total rewards  -130.47499793252283
+At step  11300
+reward:  3.526557134715735
+total rewards  -229.0116095190385
+At step  11400
+reward:  -6.62940314611568
+total rewards  -380.96446991204846
+[ 0.96481094  0.49555503  2.35649808 -0.16599352 -0.07249287  0.07133359
+  0.          0.        ]
+At step  11500
+reward:  0.30107790866003464
+total rewards  -103.7175769774372
+[ 0.2812541  -0.03606076  1.99684461 -0.64102952 -0.08729994 -2.70115852
+  1.          1.        ]
+At step  11600
+reward:  -3.3477691715218842
+total rewards  -130.69524035507462
+[ 0.08330946 -0.0207005   1.22655487 -0.02577707  0.13840201 -0.15549763
+  1.          1.        ]
+At step  11700
+reward:  0.4382901042097113
+total rewards  -148.99867086197867
+At step  11800
+reward:  -3.775977880795308
+total rewards  -146.78150076702877
+[ 0.77117233  0.28158899  1.73555231 -0.68649689 -0.20067628  0.22276783
+  0.          0.        ]
+At step  11900
+reward:  -4.391991059055826
+total rewards  24.998442937683173
+training model model
+Epoch 1/10
+12001/12001 [==============================] - 11s 938us/step - loss: 272.8093 - accuracy: 0.0000e+00
+Epoch 2/10
+12001/12001 [==============================] - 11s 921us/step - loss: 271.1747 - accuracy: 0.0000e+00
+Epoch 3/10
+12001/12001 [==============================] - 11s 902us/step - loss: 271.4234 - accuracy: 0.0000e+00
+Epoch 4/10
+12001/12001 [==============================] - 11s 909us/step - loss: 270.5909 - accuracy: 0.0000e+00
+Epoch 5/10
+12001/12001 [==============================] - 11s 910us/step - loss: 269.6978 - accuracy: 0.0000e+00
+Epoch 6/10
+12001/12001 [==============================] - 11s 919us/step - loss: 269.1286 - accuracy: 0.0000e+00
+Epoch 7/10
+12001/12001 [==============================] - 11s 919us/step - loss: 268.4206 - accuracy: 0.0000e+00
+Epoch 8/10
+12001/12001 [==============================] - 11s 927us/step - loss: 267.7454 - accuracy: 0.0000e+00
+Epoch 9/10
+12001/12001 [==============================] - 11s 927us/step - loss: 266.8680 - accuracy: 0.0000e+00
+Epoch 10/10
+12001/12001 [==============================] - 11s 903us/step - loss: 266.3266 - accuracy: 0.0000e+00
+At step  12000
+reward:  -1.5691824998478285
+total rewards  -47.3369349455763
+[ 1.00456696  0.81095439  0.4993703  -0.22539197  0.00297986  0.13915502
+  0.          0.        ]
+At step  12100
+reward:  1.1735843423631298
+total rewards  -8.31133161509514
+[ 0.05535011 -0.01959769  0.21299994 -0.091788    0.16709685 -0.56632698
+  1.          1.        ]
+At step  12200
+reward:  -1.4313942214863105
+total rewards  -101.16433672772511
+At step  12300
+reward:  6.168359321558823
+total rewards  -98.19191076663377
+At step  12400
+reward:  -0.3168920937577788
+total rewards  -53.38528100069932
+At step  12500
+reward:  -32.2000218594657
+total rewards  -43.693373337380734
+Landed it!
+[-1.49201393e-02  8.56939952e-05 -1.50541286e-01 -1.54319406e-02
+ -2.73802225e-03 -4.56835280e-02  1.00000000e+00  1.00000000e+00]
+Successful Landing!!!  12584
+Total successes are:  7
+At step  12600
+reward:  -5.97849203023112
+total rewards  209.56123322918248
+At step  12700
+reward:  7.304567288573564
+total rewards  225.86479980449843
+At step  12800
+reward:  -0.4987528912875261
+total rewards  256.42871627020673
+[-0.41526928 -0.04195816 -0.8365984   0.03047991 -0.14519244 -0.70759932
+  1.          1.        ]
+At step  12900
+reward:  -3.895643619584662
+total rewards  -170.09278212647644
+training model model
+Epoch 1/10
+13001/13001 [==============================] - 12s 911us/step - loss: 259.0100 - accuracy: 0.0000e+00
+Epoch 2/10
+13001/13001 [==============================] - 12s 917us/step - loss: 258.3400 - accuracy: 0.0000e+00
+Epoch 3/10
+13001/13001 [==============================] - 12s 938us/step - loss: 258.1057 - accuracy: 0.0000e+00
+Epoch 4/10
+13001/13001 [==============================] - 12s 909us/step - loss: 257.0663 - accuracy: 0.0000e+00
+Epoch 5/10
+13001/13001 [==============================] - 12s 928us/step - loss: 256.5203 - accuracy: 0.0000e+00
+Epoch 6/10
+13001/13001 [==============================] - 12s 907us/step - loss: 256.0655 - accuracy: 0.0000e+00
+Epoch 7/10
+13001/13001 [==============================] - 12s 922us/step - loss: 255.3956 - accuracy: 0.0000e+00
+Epoch 8/10
+13001/13001 [==============================] - 12s 905us/step - loss: 254.8517 - accuracy: 0.0000e+00
+Epoch 9/10
+13001/13001 [==============================] - 12s 927us/step - loss: 253.9940 - accuracy: 0.0000e+00
+Epoch 10/10
+13001/13001 [==============================] - 12s 925us/step - loss: 253.3944 - accuracy: 0.0000e+00
+At step  13000
+reward:  7.076471279735067
+total rewards  -132.6178635291599
+At step  13100
+reward:  -150
+total rewards  -176.456711203572
+[-0.15018473 -0.01721532  0.19338898 -0.09320876  0.21533635 -0.61972388
+  1.          1.        ]
+At step  13200
+reward:  2.004058854431551
+total rewards  -218.9338118871699
+At step  13300
+reward:  0.2811352159479056
+total rewards  -349.51816185194326
+At step  13400
+reward:  28.707375959157943
+total rewards  -98.02470617258932
+At step  13500
+reward:  -11.284015708499538
+total rewards  -186.62874457899764
+At step  13600
+reward:  -17.94613185320322
+total rewards  -314.3804758630447
+[0.33781614 0.08866478 2.41878748 0.48170863 0.28952149 1.78178279
+ 0.         0.        ]
+At step  13700
+reward:  -8.500001730210283
+total rewards  40.79131972328213
+At step  13800
+reward:  -2.222993710243281
+total rewards  54.10027834549946
+At step  13900
+reward:  -8.585782650488962
+total rewards  105.26101227326374
+training model model
+Epoch 1/10
+14001/14001 [==============================] - 9s 665us/step - loss: 248.7483 - accuracy: 0.0000e+00
+Epoch 2/10
+14001/14001 [==============================] - 13s 907us/step - loss: 248.0690 - accuracy: 0.0000e+00
+Epoch 3/10
+14001/14001 [==============================] - 13s 908us/step - loss: 247.5437 - accuracy: 0.0000e+00
+Epoch 4/10
+14001/14001 [==============================] - 13s 930us/step - loss: 246.7084 - accuracy: 0.0000e+00
+Epoch 5/10
+14001/14001 [==============================] - 13s 937us/step - loss: 246.2639 - accuracy: 0.0000e+00
+Epoch 6/10
+14001/14001 [==============================] - 13s 902us/step - loss: 245.6012 - accuracy: 0.0000e+00
+Epoch 7/10
+14001/14001 [==============================] - 13s 902us/step - loss: 244.8945 - accuracy: 0.0000e+00
+Epoch 8/10
+14001/14001 [==============================] - 13s 907us/step - loss: 244.8388 - accuracy: 0.0000e+00
+Epoch 9/10
+14001/14001 [==============================] - 13s 920us/step - loss: 243.8721 - accuracy: 0.0000e+00
+Epoch 10/10
+14001/14001 [==============================] - 13s 907us/step - loss: 243.4256 - accuracy: 0.0000e+00
+At step  14000
+reward:  -2.574813427238354
+total rewards  57.9780784168693
+At step  14100
+reward:  -4.703111227934728
+total rewards  202.55356910689272
+At step  14200
+reward:  -38.53049397735289
+total rewards  167.7588615766888
+At step  14300
+reward:  -8.742978971868087
+total rewards  82.02715953536244
+At step  14400
+reward:  13.183900309036888
+total rewards  52.461527008701665
+At step  14500
+reward:  -0.1221343488707598
+total rewards  64.40155942428434
+At step  14600
+reward:  -6.650171798294027
+total rewards  71.30874445688096
+At step  14700
+reward:  44.78019096431322
+total rewards  -27.299587332520062
+At step  14800
+reward:  -7.320387606062917
+total rewards  12.126970825160642
+At step  14900
+reward:  1.486035483955839
+total rewards  -26.381112190671203
+training model model
+Epoch 1/10
+15001/15001 [==============================] - 14s 938us/step - loss: 258.5170 - accuracy: 0.0000e+00
+Epoch 2/10
+15001/15001 [==============================] - 14s 939us/step - loss: 257.8617 - accuracy: 0.0000e+00
+Epoch 3/10
+15001/15001 [==============================] - 14s 905us/step - loss: 257.3190 - accuracy: 0.0000e+00
+Epoch 4/10
+15001/15001 [==============================] - 14s 934us/step - loss: 256.8646 - accuracy: 0.0000e+00
+Epoch 5/10
+15001/15001 [==============================] - 14s 933us/step - loss: 255.9145 - accuracy: 0.0000e+00
+Epoch 6/10
+15001/15001 [==============================] - 14s 914us/step - loss: 255.6450 - accuracy: 0.0000e+00
+Epoch 7/10
+15001/15001 [==============================] - 14s 922us/step - loss: 255.0036 - accuracy: 0.0000e+00
+Epoch 8/10
+15001/15001 [==============================] - 14s 915us/step - loss: 254.6182 - accuracy: 0.0000e+00
+Epoch 9/10
+15001/15001 [==============================] - 14s 928us/step - loss: 253.5970 - accuracy: 0.0000e+00
+Epoch 10/10
+15001/15001 [==============================] - 14s 914us/step - loss: 253.7702 - accuracy: 0.0000e+00
+At step  15000
+reward:  0.23906816385633078
+total rewards  -103.47825505020315
+At step  15100
+reward:  -12.992043541032928
+total rewards  -109.04653753385553
+At step  15200
+reward:  -6.815693095192964
+total rewards  -109.51451160564956
+At step  15300
+reward:  5.920436630605216
+total rewards  -164.84128106271626
+At step  15400
+reward:  18.810045310162742
+total rewards  -182.7252076470336
+At step  15500
+reward:  19.248302529344837
+total rewards  -229.10893794597078
+At step  15600
+reward:  4.490774592749297
+total rewards  -220.74835129104451
+At step  15700
+reward:  -5.1904705261587685
+total rewards  -189.50376687256582
+At step  15800
+reward:  -2.8269907560714183
+total rewards  -274.14982672589855
+At step  15900
+reward:  -14.38522565489015
+total rewards  -296.8206050236206
+training model model
+Epoch 1/10
+16001/16001 [==============================] - 15s 922us/step - loss: 268.6307 - accuracy: 0.0000e+00
+Epoch 2/10
+16001/16001 [==============================] - 15s 915us/step - loss: 267.5025 - accuracy: 0.0000e+00
+Epoch 3/10
+16001/16001 [==============================] - 15s 925us/step - loss: 267.2745 - accuracy: 0.0000e+00
+Epoch 4/10
+16001/16001 [==============================] - 15s 925us/step - loss: 266.3868 - accuracy: 0.0000e+00
+Epoch 5/10
+16001/16001 [==============================] - 15s 911us/step - loss: 265.6602 - accuracy: 0.0000e+00
+Epoch 6/10
+16001/16001 [==============================] - 15s 916us/step - loss: 264.9146 - accuracy: 0.0000e+00
+Epoch 7/10
+16001/16001 [==============================] - 15s 911us/step - loss: 263.9899 - accuracy: 0.0000e+00
+Epoch 8/10
+16001/16001 [==============================] - 15s 924us/step - loss: 262.5800 - accuracy: 0.0000e+00
+Epoch 9/10
+16001/16001 [==============================] - 15s 911us/step - loss: 261.8109 - accuracy: 0.0000e+00
+Epoch 10/10
+16001/16001 [==============================] - 15s 917us/step - loss: 261.6942 - accuracy: 0.0000e+00
+At step  16000
+reward:  -20.36726298377461
+total rewards  -294.8572278137892
+At step  16100
+reward:  -5.124467464747942
+total rewards  -329.9484506431709
+At step  16200
+reward:  36.68834775272343
+total rewards  -375.9388501918379
+At step  16300
+reward:  -1.7502277233952772
+total rewards  -395.42884610112674
+At step  16400
+reward:  -6.035567533346275
+total rewards  -357.51304351922323
+At step  16500
+reward:  -30.848940312002927
+total rewards  -385.5045810820358
+At step  16600
+reward:  -4.495092750427349
+total rewards  -398.22490203750544
+[ 0.54013357  0.00528327 -0.02099545 -0.11757531  0.03636825  0.52514052
+  1.          0.        ]
+At step  16700
+reward:  15.335164829483638
+total rewards  93.77160906338483
+At step  16800
+reward:  -0.6040738323304831
+total rewards  -45.820500574602164
+At step  16900
+reward:  -4.663161650168063
+total rewards  -276.6282860079702
+[ 0.46811275  0.03827167  2.65626939 -0.28067581  0.07742007 -1.968695
+  1.          1.        ]
+training model model
+Epoch 1/10
+17001/17001 [==============================] - 16s 944us/step - loss: 268.2440 - accuracy: 0.0000e+00
+Epoch 2/10
+17001/17001 [==============================] - 16s 927us/step - loss: 267.3089 - accuracy: 0.0000e+00
+Epoch 3/10
+17001/17001 [==============================] - 16s 932us/step - loss: 266.2153 - accuracy: 0.0000e+00
+Epoch 4/10
+17001/17001 [==============================] - 16s 922us/step - loss: 263.6496 - accuracy: 0.0000e+00
+Epoch 5/10
+17001/17001 [==============================] - 16s 935us/step - loss: 263.5183 - accuracy: 0.0000e+00
+Epoch 6/10
+17001/17001 [==============================] - 16s 925us/step - loss: 261.2350 - accuracy: 0.0000e+00
+Epoch 7/10
+17001/17001 [==============================] - 15s 909us/step - loss: 260.1800 - accuracy: 0.0000e+00
+Epoch 8/10
+17001/17001 [==============================] - 15s 905us/step - loss: 259.0092 - accuracy: 0.0000e+00
+Epoch 9/10
+17001/17001 [==============================] - 16s 929us/step - loss: 258.9590 - accuracy: 0.0000e+00
+Epoch 10/10
+17001/17001 [==============================] - 16s 928us/step - loss: 256.1644 - accuracy: 0.0000e+00
+At step  17000
+reward:  -0.18406570941603367
+total rewards  -221.57790823004126
+[-0.26887026 -0.02334587  0.43486575  0.14423789 -0.49662438 -1.34625165
+  1.          0.        ]
+At step  17100
+reward:  -10.793205908090016
+total rewards  -125.75394085902805
+[ 0.5457428  -0.06446156  1.05858652 -0.58122476 -0.31784743  2.09661992
+  1.          1.        ]
+At step  17200
+reward:  -8.302131946004915
+total rewards  -108.44214791097845
+[ 0.18785944 -0.02740027  0.51356395 -0.23703607 -0.09513444  2.67132441
+  1.          1.        ]
+At step  17300
+reward:  -2.7862456303111083
+total rewards  -161.90790256864327
+[ 0.16809149 -0.01692485 -0.10261615 -0.43964057 -0.03314537  4.33437824
+  1.          1.        ]
+At step  17400
+reward:  -9.37879885273691
+total rewards  -118.28779277609843
+[ 0.05767336 -0.01960565  0.67503834 -0.72417196 -0.16629831  4.6485939
+  1.          1.        ]
+At step  17500
+reward:  2.8951756257371546
+total rewards  -165.44762618639774
+[ 2.47793007e-01 -4.15421661e-02  7.78213739e-01 -1.59531474e-01
+ -3.00164193e-01  4.50396935e-07  1.00000000e+00  1.00000000e+00]
+At step  17600
+reward:  -0.708751129225133
+total rewards  -183.5483830441622
+[ 0.04130268 -0.02760569  1.21472041 -0.22297576  0.01528173 -1.73950942
+  1.          1.        ]
+At step  17700
+reward:  -1.3189475018039962
+total rewards  -133.69748866719746
+[-0.10307941 -0.01553816  0.55812085 -0.73234473 -0.25083649  5.02964274
+  1.          0.        ]
+At step  17800
+reward:  0.31717126901277154
+total rewards  -209.5878054290747
+At step  17900
+reward:  -5.4947663269297475
+total rewards  -347.5895651221959
+[ 0.67468147  0.21800161  2.52807268 -0.66425625  0.0582985   0.48320957
+  0.          0.        ]
+training model model
+Epoch 1/10
+18001/18001 [==============================] - 17s 920us/step - loss: 250.8935 - accuracy: 0.0000e+00
+Epoch 2/10
+18001/18001 [==============================] - 16s 916us/step - loss: 249.9844 - accuracy: 0.0000e+00
+Epoch 3/10
+18001/18001 [==============================] - 16s 914us/step - loss: 248.4916 - accuracy: 0.0000e+00
+Epoch 4/10
+18001/18001 [==============================] - 16s 914us/step - loss: 246.9793 - accuracy: 0.0000e+00
+Epoch 5/10
+18001/18001 [==============================] - 16s 911us/step - loss: 245.6571 - accuracy: 0.0000e+00
+Epoch 6/10
+18001/18001 [==============================] - 17s 923us/step - loss: 244.7965 - accuracy: 0.0000e+00
+Epoch 7/10
+18001/18001 [==============================] - 17s 925us/step - loss: 244.0157 - accuracy: 0.0000e+00
+Epoch 8/10
+18001/18001 [==============================] - 17s 918us/step - loss: 242.3650 - accuracy: 0.0000e+00
+Epoch 9/10
+18001/18001 [==============================] - 17s 935us/step - loss: 240.9954 - accuracy: 0.0000e+00
+Epoch 10/10
+18001/18001 [==============================] - 16s 910us/step - loss: 240.0357 - accuracy: 0.0000e+00
+At step  18000
+reward:  -9.624648563141324
+total rewards  25.175611799683665
+At step  18100
+reward:  0.7743457506490573
+total rewards  -73.68773911164234
+[-0.21226215 -0.02969057  0.08449883 -0.02967372  0.11364052  1.10217698
+  1.          1.        ]
+At step  18200
+reward:  2.1158992426999217
+total rewards  -188.66436379529273
+At step  18300
+reward:  -1.6932921699311556
+total rewards  -237.7282379930429
+[-0.27920551  0.02028509  0.65973691 -0.32114318 -0.55825329  0.56179396
+  1.          1.        ]
+At step  18400
+reward:  58.50302375693258
+total rewards  -199.3441223875575
+[-3.73407364e-02 -2.84154352e-02 -4.14802909e-01 -4.18126641e-08
+  1.76902639e-03  4.28906787e-07  1.00000000e+00  1.00000000e+00]
+At step  18500
+reward:  -8.04444127120966
+total rewards  -186.42506698003834
+[-0.04262342 -0.02670228 -0.12681168 -0.14033073 -0.02407826  1.00465465
+  1.          1.        ]
+At step  18600
+reward:  -1.463287804196991
+total rewards  -212.01079742536186
+[-8.09289932e-02 -2.85465654e-02 -5.04970193e-01 -2.11671313e-08
+  3.14195873e-04 -4.52939256e-08  1.00000000e+00  1.00000000e+00]
+At step  18700
+reward:  -3.943903535713137
+total rewards  -130.11025333033987
+[-0.20032811 -0.02885351 -0.14691501 -0.00841844  0.05344254 -0.19317434
+  1.          1.        ]
+At step  18800
+reward:  12.578921598112062
+total rewards  -150.8421683227225
+At step  18900
+reward:  -4.64324602196403
+total rewards  -146.56398135833933
+[-1.19612122e-01 -2.85243686e-02 -3.57765444e-08  4.17293854e-10
+  2.10545753e-04 -2.97782170e-07  1.00000000e+00  1.00000000e+00]
+training model model
+Epoch 1/10
+19001/19001 [==============================] - 18s 927us/step - loss: 236.9954 - accuracy: 0.0000e+00
+Epoch 2/10
+19001/19001 [==============================] - 17s 919us/step - loss: 236.0676 - accuracy: 0.0000e+00
+Epoch 3/10
+19001/19001 [==============================] - 17s 914us/step - loss: 234.4937 - accuracy: 0.0000e+00
+Epoch 4/10
+19001/19001 [==============================] - 17s 911us/step - loss: 232.7181 - accuracy: 0.0000e+00
+Epoch 5/10
+19001/19001 [==============================] - 18s 922us/step - loss: 233.0660 - accuracy: 0.0000e+00
+Epoch 6/10
+19001/19001 [==============================] - 18s 923us/step - loss: 232.6161 - accuracy: 0.0000e+00
+Epoch 7/10
+19001/19001 [==============================] - 17s 917us/step - loss: 231.0917 - accuracy: 0.0000e+00
+Epoch 8/10
+19001/19001 [==============================] - 18s 921us/step - loss: 230.6027 - accuracy: 0.0000e+00
+Epoch 9/10
+19001/19001 [==============================] - 18s 934us/step - loss: 229.8831 - accuracy: 0.0000e+00
+Epoch 10/10
+19001/19001 [==============================] - 18s 930us/step - loss: 229.0188 - accuracy: 0.0000e+00
+At step  19000
+reward:  0.9205154762214832
+total rewards  -91.43035991198352
+At step  19100
+reward:  0.9292114793703733
+total rewards  -127.59795493795937
+[ 1.00272121  0.70994588  1.13940446 -0.01261728  0.08199935 -0.05595525
+  0.          0.        ]
+At step  19200
+reward:  9.486059643989222
+total rewards  -159.86643319311366
+[-5.42041779e-02 -2.85138305e-02 -5.78890085e-01  5.32059516e-08
+  2.39149478e-04 -2.72319085e-07  1.00000000e+00  1.00000000e+00]
+At step  19300
+reward:  -3.7409406818856765
+total rewards  -182.68044841153846
+At step  19400
+reward:  -2.274082110952
+total rewards  -227.13928938248227
+[-6.24927521e-02 -2.85412486e-02  3.69036913e-01  6.01359665e-08
+  2.77187180e-04  3.28348847e-07  1.00000000e+00  1.00000000e+00]
+At step  19500
+reward:  -11.686032529236936
+total rewards  -261.20935453965666
+At step  19600
+reward:  9.410348864980639
+total rewards  -315.3242704546314
+[ 0.57717447  0.09823118 -0.75899482 -0.25221414  0.07710728  3.48894723
+  1.          0.        ]
+[ 0.23273344 -0.03482689 -0.02409114 -0.47609356 -0.20193279 -4.49540647
+  1.          1.        ]
+At step  19700
+reward:  1.0084181296878927
+total rewards  -117.15111788595395
+At step  19800
+reward:  -7.565602499694804
+total rewards  -71.49153823528474
+[ 1.0102726   0.52122727  1.68314139 -0.12195811  0.10006101  0.00682705
+  0.          0.        ]
+At step  19900
+reward:  4.540206402724926
+total rewards  -148.73200071556536
+training model model
+Epoch 1/10
+20001/20001 [==============================] - 19s 933us/step - loss: 223.5651 - accuracy: 0.0000e+00
+Epoch 2/10
+20001/20001 [==============================] - 18s 922us/step - loss: 223.4466 - accuracy: 0.0000e+00
+Epoch 3/10
+20001/20001 [==============================] - 19s 941us/step - loss: 221.9869 - accuracy: 0.0000e+00
+Epoch 4/10
+20001/20001 [==============================] - 18s 915us/step - loss: 222.4905 - accuracy: 0.0000e+00
+Epoch 5/10
+20001/20001 [==============================] - 18s 910us/step - loss: 220.9248 - accuracy: 0.0000e+00
+Epoch 6/10
+20001/20001 [==============================] - 18s 904us/step - loss: 219.8694 - accuracy: 0.0000e+00
+Epoch 7/10
+20001/20001 [==============================] - 18s 911us/step - loss: 219.1594 - accuracy: 0.0000e+00
+Epoch 8/10
+20001/20001 [==============================] - 18s 921us/step - loss: 219.7381 - accuracy: 0.0000e+00
+Epoch 9/10
+20001/20001 [==============================] - 18s 921us/step - loss: 218.7231 - accuracy: 0.0000e+00
+Epoch 10/10
+20001/20001 [==============================] - 18s 921us/step - loss: 216.8749 - accuracy: 0.0000e+00
+At step  20000
+reward:  -9.267880584675433
+total rewards  -323.12479472335724
+At step  20100
+reward:  -0.28410572495180464
+total rewards  -320.585369815885
+[ 6.78889275e-01  6.93006102e-02 -3.25607022e-01  1.25383470e-02
+ -5.73857501e-02 -9.79548152e-08  1.00000000e+00  1.00000000e+00]
+At step  20200
+reward:  7.037185805829376
+total rewards  -176.42983741274526
+[-0.22429032 -0.02985012  0.03135281 -0.333597    0.05978779  3.95374552
+  1.          0.        ]
+At step  20300
+reward:  3.061399696059782
+total rewards  -141.78778833511637
+At step  20400
+reward:  2.2208167929124625
+total rewards  -134.89504303636335
+[-2.80380249e-05 -2.84989293e-02 -2.12348640e-01  6.21801317e-06
+ -4.38206625e-05  4.24797023e-06  1.00000000e+00  1.00000000e+00]
+At step  20500
+reward:  4.542188389274519
+total rewards  -109.61335631229373
+[-0.58431749  0.0782261   0.65034775 -0.17376138 -0.35264328 -1.78265063
+  1.          1.        ]
+At step  20600
+reward:  -0.799628581937135
+total rewards  -175.53244030121837
+At step  20700
+reward:  -0.6840021652436201
+total rewards  -163.315069100589
+[ 0.2674325  -0.01777779 -0.69412494 -0.64394617  0.06886178  3.24835523
+  1.          1.        ]
+At step  20800
+reward:  8.134833565869569
+total rewards  -150
+At step  20900
+reward:  4.6130677631418875
+total rewards  -158.6421808494337
+training model model
+Epoch 1/10
+21001/21001 [==============================] - 20s 932us/step - loss: 212.8876 - accuracy: 0.0000e+00
+Epoch 2/10
+21001/21001 [==============================] - 19s 924us/step - loss: 211.1889 - accuracy: 0.0000e+00
+Epoch 3/10
+21001/21001 [==============================] - 19s 925us/step - loss: 211.2351 - accuracy: 0.0000e+00
+Epoch 4/10
+21001/21001 [==============================] - 20s 935us/step - loss: 210.2485 - accuracy: 0.0000e+00
+Epoch 5/10
+21001/21001 [==============================] - 19s 926us/step - loss: 209.6635 - accuracy: 0.0000e+00
+Epoch 6/10
+21001/21001 [==============================] - 19s 927us/step - loss: 209.0158 - accuracy: 0.0000e+00
+Epoch 7/10
+21001/21001 [==============================] - 20s 935us/step - loss: 208.2207 - accuracy: 0.0000e+00
+Epoch 8/10
+21001/21001 [==============================] - 19s 924us/step - loss: 207.1266 - accuracy: 0.0000e+00
+Epoch 9/10
+21001/21001 [==============================] - 19s 924us/step - loss: 207.2801 - accuracy: 0.0000e+00
+Epoch 10/10
+21001/21001 [==============================] - 19s 909us/step - loss: 206.1050 - accuracy: 0.0000e+00
+At step  21000
+reward:  2.385455535852909
+total rewards  -235.29274000486956
+[ 0.4935545  -0.01839258 -0.91422224 -0.19212759  0.3030341  -0.38371257
+  1.          1.        ]
+At step  21100
+reward:  -0.41741141928173886
+total rewards  -139.69572871450544
+At step  21200
+reward:  -20.800383449407622
+total rewards  -149.6928795203724
+[-0.20198083 -0.00716948  0.75259725 -0.00512372 -0.45375532  0.04901027
+  1.          1.        ]
+At step  21300
+reward:  0.6368527897410607
+total rewards  -214.85664441749486
+[1.00803242 0.78000851 2.24892028 0.03544421 0.17471628 0.71405268
+ 0.         0.        ]
+At step  21400
+reward:  4.22508386904187
+total rewards  -176.2130303737775
+At step  21500
+reward:  -4.938026174613626
+total rewards  -199.3681201832897
+[ 1.00695877  0.64086848  1.03864598 -0.08016494  0.10240258  0.09906074
+  0.          0.        ]
+At step  21600
+reward:  6.567291611307721
+total rewards  -153.36407978340438
+[ 1.22359180e-01 -2.85497363e-02 -2.89085042e-03 -4.36593647e-08
+  3.41297651e-04 -2.27940689e-07  1.00000000e+00  1.00000000e+00]
+At step  21700
+reward:  0.6567468937288327
+total rewards  -194.69416632573092
+At step  21800
+reward:  -4.234873461569687
+total rewards  -255.25861063991343
+[ 7.13632202e-01  1.35861594e-01  1.50610805e-01 -4.00477441e-03
+ -3.96195389e-02 -4.81239274e-08  1.00000000e+00  0.00000000e+00]
+At step  21900
+reward:  -0.1323943206066462
+total rewards  -194.09006999959402
+training model model
+Epoch 1/10
+22001/22001 [==============================] - 21s 934us/step - loss: 205.2975 - accuracy: 0.0000e+00
+Epoch 2/10
+22001/22001 [==============================] - 20s 909us/step - loss: 205.0891 - accuracy: 0.0000e+00
+Epoch 3/10
+22001/22001 [==============================] - 20s 917us/step - loss: 203.7656 - accuracy: 0.0000e+00
+Epoch 4/10
+22001/22001 [==============================] - 20s 923us/step - loss: 203.4689 - accuracy: 0.0000e+00
+Epoch 5/10
+22001/22001 [==============================] - 20s 930us/step - loss: 203.8906 - accuracy: 0.0000e+00
+Epoch 6/10
+22001/22001 [==============================] - 20s 917us/step - loss: 203.7566 - accuracy: 0.0000e+00
+Epoch 7/10
+22001/22001 [==============================] - 20s 915us/step - loss: 202.6502 - accuracy: 0.0000e+00
+Epoch 8/10
+22001/22001 [==============================] - 20s 905us/step - loss: 202.6478 - accuracy: 0.0000e+00
+Epoch 9/10
+22001/22001 [==============================] - 20s 916us/step - loss: 202.1787 - accuracy: 0.0000e+00
+Epoch 10/10
+22001/22001 [==============================] - 20s 922us/step - loss: 201.1627 - accuracy: 0.0000e+00
+At step  22000
+reward:  -0.8889862286143517
+total rewards  -187.0742717493875
+[ 0.95436687  0.02407694  2.80677255 -0.64556774  0.11292484  0.61008139
+  0.          0.        ]
+At step  22100
+reward:  3.589989084891281
+total rewards  -64.84119172055551
+[-0.28679619 -0.03884172 -0.73608589 -0.66587263 -0.04476084  4.49435298
+  1.          0.        ]
+[ 0.50519972  0.0090602   0.56905313 -0.87435314  0.3004601   5.25420761
+  1.          1.        ]
+At step  22200
+reward:  0.4714251817729296
+total rewards  -166.00724938700498
+[ 0.56233406  0.15785809  0.67790008 -0.47780148  0.32543811  4.57730643
+  1.          1.        ]
+At step  22300
+reward:  -10.446560653965195
+total rewards  -166.06954340804435
+At step  22400
+reward:  0.4052098350664359
+total rewards  -151.5860249595847
+At step  22500
+reward:  3.6280681577427423
+total rewards  -390.1305525586065
+[ 1.00369949  0.00809799  1.0063324  -0.98689259  0.15604067 -0.10962948
+  0.          0.        ]
+[ 0.99582691  0.88159905  2.20001539 -0.15503818 -0.07410804  0.55961859
+  0.          0.        ]
+At step  22600
+reward:  -5.431418709076782
+total rewards  17.99328723982057
+At step  22700
+reward:  8.37294371442268
+total rewards  -155.17026259665155
+[ 1.00004501  0.82714368  0.72590939 -0.08497186 -0.13878688 -0.25469788
+  0.          0.        ]
+[-2.29400492e-01 -2.06805881e-02 -4.32510158e-08 -2.33050407e-08
+ -1.44859716e-01  1.57248403e-07  1.00000000e+00  1.00000000e+00]
+At step  22800
+reward:  -5.570754749255679
+total rewards  -158.5928232184657
+[ 4.81618977e-01  5.25824134e-02 -6.59978336e-08  4.67727261e-08
+  5.85119687e-02  2.44123441e-07  1.00000000e+00  1.00000000e+00]
+At step  22900
+reward:  5.8076143393506
+total rewards  -174.77496252943214
+training model model
+Epoch 1/10
+23001/23001 [==============================] - 22s 935us/step - loss: 199.3628 - accuracy: 0.0000e+00
+Epoch 2/10
+23001/23001 [==============================] - 21s 931us/step - loss: 198.1981 - accuracy: 0.0000e+00
+Epoch 3/10
+23001/23001 [==============================] - 22s 937us/step - loss: 197.9296 - accuracy: 0.0000e+00
+Epoch 4/10
+23001/23001 [==============================] - 21s 930us/step - loss: 198.2769 - accuracy: 0.0000e+00
+Epoch 5/10
+23001/23001 [==============================] - 22s 941us/step - loss: 196.6018 - accuracy: 0.0000e+00
+Epoch 6/10
+23001/23001 [==============================] - 21s 920us/step - loss: 197.2086 - accuracy: 0.0000e+00
+Epoch 7/10
+23001/23001 [==============================] - 21s 924us/step - loss: 196.0889 - accuracy: 0.0000e+00
+Epoch 8/10
+23001/23001 [==============================] - 21s 933us/step - loss: 196.9216 - accuracy: 0.0000e+00
+Epoch 9/10
+23001/23001 [==============================] - 21s 919us/step - loss: 196.0293 - accuracy: 0.0000e+00
+Epoch 10/10
+23001/23001 [==============================] - 21s 917us/step - loss: 195.1217 - accuracy: 0.0000e+00
+At step  23000
+reward:  2.04962445646918
+total rewards  -135.8330306900223
+[-0.0960494  -0.02889041 -0.64754156 -0.1581418  -0.00663253 -0.8397584
+  1.          1.        ]
+At step  23100
+reward:  -2.5604848440138688
+total rewards  -152.42210290808305
+At step  23200
+reward:  1.4022750335891032
+total rewards  -238.3964076372618
+[ 0.49719553 -0.01317462 -0.37105815 -0.03896666 -0.35611448  0.5483828
+  1.          0.        ]
+At step  23300
+reward:  6.196893203611513
+total rewards  -150
+At step  23400
+reward:  -5.652980935652508
+total rewards  -253.08388390164876
+[-0.18164186 -0.0248784  -1.10427022 -0.68665377 -0.06199892  4.19809723
+  1.          1.        ]
+At step  23500
+reward:  1.3042180859327885
+total rewards  -175.38335222194044
+[ 3.11983585e-01 -1.75835450e-03 -2.19546974e-01 -3.37940388e-02
+  2.27159515e-01  3.21406863e-07  1.00000000e+00  1.00000000e+00]
+At step  23600
+reward:  0.34777865078313325
+total rewards  -150.74211717532503
+At step  23700
+reward:  -4.21344135317869
+total rewards  -174.7335060910672
+At step  23800
+reward:  -7.649009525442373
+total rewards  -172.73667919061782
+[ 0.44886827  0.04700609 -0.07595674 -0.15435492 -0.10072036 -1.0275991
+  1.          1.        ]
+At step  23900
+reward:  2.920592645823899
+total rewards  -140.96052324372758
+training model model
+Epoch 1/10
+24001/24001 [==============================] - 22s 914us/step - loss: 191.7288 - accuracy: 0.0000e+00
+Epoch 2/10
+24001/24001 [==============================] - 22s 905us/step - loss: 191.0245 - accuracy: 0.0000e+00
+Epoch 3/10
+24001/24001 [==============================] - 22s 915us/step - loss: 190.7429 - accuracy: 0.0000e+00
+Epoch 4/10
+24001/24001 [==============================] - 22s 905us/step - loss: 190.3784 - accuracy: 0.0000e+00
+Epoch 5/10
+24001/24001 [==============================] - 22s 900us/step - loss: 190.0004 - accuracy: 0.0000e+00
+Epoch 6/10
+24001/24001 [==============================] - 22s 914us/step - loss: 190.0773 - accuracy: 0.0000e+00
+Epoch 7/10
+24001/24001 [==============================] - 22s 902us/step - loss: 189.3277 - accuracy: 0.0000e+00
+Epoch 8/10
+24001/24001 [==============================] - 22s 901us/step - loss: 188.3478 - accuracy: 0.0000e+00
+Epoch 9/10
+24001/24001 [==============================] - 22s 906us/step - loss: 189.5691 - accuracy: 0.0000e+00
+Epoch 10/10
+24001/24001 [==============================] - 22s 902us/step - loss: 186.7890 - accuracy: 0.0000e+00
+At step  24000
+reward:  9.207948611813922
+total rewards  -87.65876329146425
+[1.00978966 0.21123634 1.79689868 0.0170653  0.11606237 0.4228936
+ 0.         0.        ]
+At step  24100
+reward:  -0.8107985531278736
+total rewards  -155.94194018420094
+At step  24200
+reward:  2.0444853569586883
+total rewards  -197.26167597742773
+[ 0.69305897  0.57261305  3.2754701  -0.30674813 -0.22005104  0.61448594
+  0.          0.        ]
+At step  24300
+reward:  -0.04195177485670981
+total rewards  -35.66943914262403
+[-0.49693079 -0.11323823 -0.19655959 -0.03173566  0.41033494 -0.13643949
+  1.          1.        ]
+At step  24400
+reward:  -1.783968219740668
+total rewards  -162.86832546031965
+At step  24500
+reward:  -5.568501511279704
+total rewards  -218.27885867958963
+At step  24600
+reward:  10.801470074880955
+total rewards  -155.09868448007592
+[ 0.24547234 -0.04197947 -0.50996768 -0.6127748  -0.3024767  -4.26852322
+  0.          0.        ]
+At step  24700
+reward:  1.0716845095156486
+total rewards  -191.31267159662923
+At step  24800
+reward:  1.3572113572661841
+total rewards  -249.8688397309563
+At step  24900
+reward:  4.293961743135189
+total rewards  21.509633077262038
+training model model
+Epoch 1/10
+25001/25001 [==============================] - 22s 899us/step - loss: 188.5268 - accuracy: 0.0000e+00
+Epoch 2/10
+25001/25001 [==============================] - 22s 897us/step - loss: 188.0961 - accuracy: 0.0000e+00
+Epoch 3/10
+25001/25001 [==============================] - 23s 910us/step - loss: 186.7734 - accuracy: 0.0000e+00
+Epoch 4/10
+25001/25001 [==============================] - 23s 912us/step - loss: 186.9894 - accuracy: 0.0000e+00
+Epoch 5/10
+25001/25001 [==============================] - 23s 900us/step - loss: 185.8407 - accuracy: 0.0000e+00
+Epoch 6/10
+25001/25001 [==============================] - 22s 894us/step - loss: 185.7365 - accuracy: 0.0000e+00
+Epoch 7/10
+25001/25001 [==============================] - 22s 896us/step - loss: 184.2763 - accuracy: 0.0000e+00
+Epoch 8/10
+25001/25001 [==============================] - 22s 881us/step - loss: 185.8499 - accuracy: 0.0000e+00
+Epoch 9/10
+25001/25001 [==============================] - 22s 889us/step - loss: 184.8638 - accuracy: 0.0000e+00
+Epoch 10/10
+25001/25001 [==============================] - 23s 906us/step - loss: 185.0026 - accuracy: 0.0000e+00
+At step  25000
+reward:  1.0189508486763825
+total rewards  -131.6455961344644
+At step  25100
+reward:  46.14298668538527
+total rewards  -106.09252670632539
+At step  25200
+reward:  -2.0051037588000296
+total rewards  -66.38338820915614
+At step  25300
+reward:  -3.790982327910406
+total rewards  -50.727607169623475
+At step  25400
+reward:  -1.1725158874572161
+total rewards  -76.16487871301894
+At step  25500
+reward:  38.99660190506644
+total rewards  -142.7843849080014
+At step  25600
+reward:  -7.272294763465309
+total rewards  -122.16734346568614
+At step  25700
+reward:  -4.986544984943603
+total rewards  -149.28269411255908
+At step  25800
+reward:  -3.5404905550685872
+total rewards  -168.21795413996057
+At step  25900
+reward:  -3.8204028675208215
+total rewards  -193.62817163271995
+training model model
+Epoch 1/10
+26001/26001 [==============================] - 24s 916us/step - loss: 186.8116 - accuracy: 0.0000e+00
+Epoch 2/10
+26001/26001 [==============================] - 24s 919us/step - loss: 187.0039 - accuracy: 0.0000e+00
+Epoch 3/10
+26001/26001 [==============================] - 24s 937us/step - loss: 186.7715 - accuracy: 0.0000e+00
+Epoch 4/10
+26001/26001 [==============================] - 24s 917us/step - loss: 185.2688 - accuracy: 0.0000e+00
+Epoch 5/10
+26001/26001 [==============================] - 24s 927us/step - loss: 185.6705 - accuracy: 0.0000e+00
+Epoch 6/10
+26001/26001 [==============================] - 24s 916us/step - loss: 185.1474 - accuracy: 0.0000e+00
+Epoch 7/10
+26001/26001 [==============================] - 24s 925us/step - loss: 185.6188 - accuracy: 0.0000e+00
+Epoch 8/10
+26001/26001 [==============================] - 24s 913us/step - loss: 184.6206 - accuracy: 0.0000e+00
+Epoch 9/10
+26001/26001 [==============================] - 24s 912us/step - loss: 184.9851 - accuracy: 0.0000e+00
+Epoch 10/10
+26001/26001 [==============================] - 24s 930us/step - loss: 184.9496 - accuracy: 0.0000e+00
+At step  26000
+reward:  -4.19397743438061
+total rewards  -217.37194680973744
+At step  26100
+reward:  37.54443611935643
+total rewards  -281.03412848510044
+At step  26200
+reward:  1.498438281153863
+total rewards  -272.20187010828107
+At step  26300
+reward:  4.354973284618383
+total rewards  -327.1447636373635
+At step  26400
+reward:  -39.3657171188467
+total rewards  -353.7878640485276
+At step  26500
+reward:  1.4682615533881545
+total rewards  -371.6374447067069
+At step  26600
+reward:  -4.520071982253929
+total rewards  -401.4941777487674
+At step  26700
+reward:  -7.657169199897176
+total rewards  -417.38910581648565
+At step  26800
+reward:  -2.088681223141024
+total rewards  -407.15199513083786
+[-0.44409513 -0.06578361 -0.06624083 -0.01596686  0.04337858 -0.00685081
+  1.          0.        ]
+At step  26900
+reward:  -7.438730355433801
+total rewards  32.39242123745388
+training model model
+Epoch 1/10
+27001/27001 [==============================] - 25s 926us/step - loss: 188.7642 - accuracy: 0.0000e+00
+Epoch 2/10
+27001/27001 [==============================] - 25s 919us/step - loss: 187.3332 - accuracy: 0.0000e+00
+Epoch 3/10
+27001/27001 [==============================] - 25s 934us/step - loss: 187.5856 - accuracy: 0.0000e+00
+Epoch 4/10
+27001/27001 [==============================] - 25s 935us/step - loss: 187.5308 - accuracy: 0.0000e+00
+Epoch 5/10
+27001/27001 [==============================] - 25s 916us/step - loss: 187.2148 - accuracy: 0.0000e+00
+Epoch 6/10
+27001/27001 [==============================] - 25s 915us/step - loss: 186.7407 - accuracy: 0.0000e+00
+Epoch 7/10
+27001/27001 [==============================] - 25s 919us/step - loss: 186.0219 - accuracy: 0.0000e+00
+Epoch 8/10
+27001/27001 [==============================] - 24s 895us/step - loss: 185.1388 - accuracy: 0.0000e+00
+Epoch 9/10
+27001/27001 [==============================] - 24s 894us/step - loss: 185.7847 - accuracy: 0.0000e+00
+Epoch 10/10
+27001/27001 [==============================] - 24s 896us/step - loss: 185.6474 - accuracy: 0.0000e+00
+At step  27000
+reward:  5.904186291644352
+total rewards  26.037988018142872
+At step  27100
+reward:  1.8530776447667079
+total rewards  47.63875608721703
+[ 1.00296459 -0.10516116  1.2384669  -0.16157516 -0.1073759   0.09784153
+  0.          0.        ]
+At step  27200
+reward:  1.2347575721963058
+total rewards  -176.74203394731714
+At step  27300
+reward:  0.32823588198767134
+total rewards  -256.83880830891906
+[-0.28881016 -0.0294049  -1.07878129 -0.19472162  0.07756088 -0.92946585
+  1.          1.        ]
+At step  27400
+reward:  11.253267924527485
+total rewards  -142.22496195448738
+At step  27500
+reward:  4.652269840699516
+total rewards  -209.44878568008548
+At step  27600
+reward:  -3.17908374346442
+total rewards  -183.11654084382965
+Landed it!
+[ 0.00404482 -0.00387296 -0.02435996 -0.01289935  0.02498696 -1.19656968
+  1.          1.        ]
+Successful Landing!!!  27655
+Total successes are:  8
+At step  27700
+reward:  -2.1540234072076454
+total rewards  63.2132283744765
+At step  27800
+reward:  -5.336168159672936
+total rewards  -88.96582756800403
+[-0.42148395 -0.07720575 -2.0555776   0.13439251  0.19912711 -3.04272079
+  0.          1.        ]
+At step  27900
+reward:  0.8274109080884066
+total rewards  -168.51686116901098
+training model model
+Epoch 1/10
+28001/28001 [==============================] - 25s 910us/step - loss: 185.9164 - accuracy: 0.0000e+00
+Epoch 2/10
+28001/28001 [==============================] - 25s 910us/step - loss: 185.3066 - accuracy: 0.0000e+00
+Epoch 3/10
+28001/28001 [==============================] - 25s 885us/step - loss: 185.5790 - accuracy: 0.0000e+00
+Epoch 4/10
+28001/28001 [==============================] - 26s 915us/step - loss: 184.8718 - accuracy: 0.0000e+00
+Epoch 5/10
+28001/28001 [==============================] - 25s 904us/step - loss: 185.0425 - accuracy: 0.0000e+00
+Epoch 6/10
+28001/28001 [==============================] - 26s 911us/step - loss: 184.8890 - accuracy: 0.0000e+00
+Epoch 7/10
+28001/28001 [==============================] - 25s 894us/step - loss: 185.0628 - accuracy: 0.0000e+00
+Epoch 8/10
+28001/28001 [==============================] - 25s 892us/step - loss: 184.9195 - accuracy: 0.0000e+00
+Epoch 9/10
+28001/28001 [==============================] - 25s 884us/step - loss: 184.2513 - accuracy: 0.0000e+00
+Epoch 10/10
+28001/28001 [==============================] - 25s 901us/step - loss: 183.7577 - accuracy: 0.0000e+00
+At step  28000
+reward:  8.608414628348848
+total rewards  -176.52072574841807
+[ 0.67711601  0.47663422  2.97116343 -0.14591013 -0.22228646  0.74721058
+  0.          0.        ]
+At step  28100
+reward:  -1.6917119844783672
+total rewards  -320.4116988837732
+[ 1.01195126  0.81448823  2.31810904 -0.28691631 -0.08703388  0.63147477
+  0.          0.        ]
+At step  28200
+reward:  5.44017135207333
+total rewards  -138.8068030974935
+[ 0.19320641  0.60947724  3.58749803 -0.49538289 -1.1928364  -0.26066218
+  0.          0.        ]
+At step  28300
+reward:  -6.028089831896632
+total rewards  76.62134729638959
+At step  28400
+reward:  0.546870415805121
+total rewards  24.284290980267453
+At step  28500
+reward:  6.313994375616949
+total rewards  44.38868774427918
+[ 1.01967812  0.49535323  2.60577075 -0.19704676 -0.13651469  0.70592594
+  0.          0.        ]
+At step  28600
+reward:  -2.884967110154804
+total rewards  -138.7044950174781
+At step  28700
+reward:  -8.42138063974641
+total rewards  -151.31970946705533
+At step  28800
+reward:  -0.31990926158694366
+total rewards  -147.34854488366048
+[ 0.37855368  0.70193072  2.73230648 -0.33593541 -0.9678126  -0.52281658
+  0.          0.        ]
+At step  28900
+reward:  -6.168147069512467
+total rewards  -114.16239777206796
+training model model
+Epoch 1/10
+29001/29001 [==============================] - 26s 903us/step - loss: 180.1591 - accuracy: 0.0000e+00
+Epoch 2/10
+29001/29001 [==============================] - 26s 892us/step - loss: 179.8624 - accuracy: 0.0000e+00
+Epoch 3/10
+29001/29001 [==============================] - 26s 895us/step - loss: 179.9438 - accuracy: 0.0000e+00
+Epoch 4/10
+29001/29001 [==============================] - 26s 904us/step - loss: 179.2232 - accuracy: 0.0000e+00
+Epoch 5/10
+29001/29001 [==============================] - 26s 888us/step - loss: 179.1165 - accuracy: 0.0000e+00
+Epoch 6/10
+29001/29001 [==============================] - 26s 887us/step - loss: 178.6872 - accuracy: 0.0000e+00
+Epoch 7/10
+29001/29001 [==============================] - 26s 890us/step - loss: 178.5941 - accuracy: 0.0000e+00
+Epoch 8/10
+29001/29001 [==============================] - 26s 889us/step - loss: 178.8058 - accuracy: 0.0000e+00
+Epoch 9/10
+29001/29001 [==============================] - 26s 890us/step - loss: 178.9492 - accuracy: 0.0000e+00
+Epoch 10/10
+29001/29001 [==============================] - 26s 892us/step - loss: 178.5035 - accuracy: 0.0000e+00
+At step  29000
+reward:  -15.508065863909167
+total rewards  -12.132077437085666
+[-0.23255992 -0.03125142  0.87778052  0.08777863  0.08335908 -0.26511284
+  1.          1.        ]
+At step  29100
+reward:  1.7526272021478824
+total rewards  -236.10259589699493
+At step  29200
+reward:  2.566942744197139
+total rewards  -249.90213051365149
+At step  29300
+reward:  -1.355927519403745
+total rewards  -273.16868460942607
+At step  29400
+reward:  -8.86397584348626
+total rewards  -312.97629678280015
+[ 0.98024731  0.38201905  1.17972414 -0.06478213  0.31939238  0.02498399
+  0.          0.        ]
+At step  29500
+reward:  3.5150553678341834
+total rewards  -32.27899991408337
+At step  29600
+reward:  -8.955321836589492
+total rewards  -84.7200825766021
+[ 0.57450495  0.38754087  4.02776814 -0.9103845  -0.88457018  0.3370138
+  0.          0.        ]
+At step  29700
+reward:  5.704124308101355
+total rewards  -5.533099116261173
+At step  29800
+reward:  -2.036514442365433
+total rewards  92.46769131483325
+At step  29900
+reward:  2.208729598928829
+total rewards  -74.70833883824477
+training model model
+Epoch 1/10
+30001/30001 [==============================] - 27s 905us/step - loss: 174.2397 - accuracy: 0.0000e+00
+Epoch 2/10
+30001/30001 [==============================] - 27s 902us/step - loss: 174.2859 - accuracy: 0.0000e+00
+Epoch 3/10
+30001/30001 [==============================] - 27s 892us/step - loss: 173.8503 - accuracy: 0.0000e+00
+Epoch 4/10
+30001/30001 [==============================] - 27s 891us/step - loss: 173.4773 - accuracy: 0.0000e+00
+Epoch 5/10
+30001/30001 [==============================] - 27s 894us/step - loss: 173.4681 - accuracy: 0.0000e+00
+Epoch 6/10
+30001/30001 [==============================] - 27s 892us/step - loss: 173.7692 - accuracy: 0.0000e+00
+Epoch 7/10
+30001/30001 [==============================] - 27s 901us/step - loss: 173.0879 - accuracy: 0.0000e+00
+Epoch 8/10
+30001/30001 [==============================] - 27s 884us/step - loss: 172.4916 - accuracy: 0.0000e+00
+Epoch 9/10
+30001/30001 [==============================] - 27s 883us/step - loss: 172.8201 - accuracy: 0.0000e+00
+Epoch 10/10
+30001/30001 [==============================] - 27s 896us/step - loss: 172.5774 - accuracy: 0.0000e+00
+At step  30000
+reward:  -20.291840772255302
+total rewards  -174.49899219348768
+[ 1.00550137 -0.02109048  0.7395877  -0.43599494 -0.95510221 -1.75765626
+  0.          0.        ]
+At step  30100
+reward:  -7.000260790300631
+total rewards  -131.67880930221813
+At step  30200
+reward:  3.103078729796523
+total rewards  -159.25658543329885
+At step  30300
+reward:  -0.47903004983226766
+total rewards  -146.522215583377
+At step  30400
+reward:  -5.846610965319982
+total rewards  -119.00796828265175
+At step  30500
+reward:  6.445019662397157
+total rewards  -85.62752317695899
+At step  30600
+reward:  3.7679675552580036
+total rewards  62.15555064431547
+At step  30700
+reward:  -6.834424708383956
+total rewards  42.41346917775168
+At step  30800
+reward:  -0.062194913513499206
+total rewards  61.91697871886219
+At step  30900
+reward:  -0.14584715761075984
+total rewards  52.424771170249045
+training model model
+Epoch 1/10
+31001/31001 [==============================] - 28s 911us/step - loss: 169.2777 - accuracy: 0.0000e+00
+Epoch 2/10
+31001/31001 [==============================] - 29s 927us/step - loss: 169.4835 - accuracy: 0.0000e+00
+Epoch 3/10
+31001/31001 [==============================] - 28s 919us/step - loss: 168.4601 - accuracy: 0.0000e+00
+Epoch 4/10
+31001/31001 [==============================] - 29s 929us/step - loss: 169.1383 - accuracy: 0.0000e+00
+Epoch 5/10
+31001/31001 [==============================] - 29s 920us/step - loss: 168.1351 - accuracy: 0.0000e+00
+Epoch 6/10
+31001/31001 [==============================] - 29s 927us/step - loss: 168.5329 - accuracy: 0.0000e+00
+Epoch 7/10
+31001/31001 [==============================] - 29s 927us/step - loss: 168.1162 - accuracy: 0.0000e+00
+Epoch 8/10
+31001/31001 [==============================] - 28s 915us/step - loss: 168.0631 - accuracy: 0.0000e+00
+Epoch 9/10
+31001/31001 [==============================] - 28s 914us/step - loss: 167.8705 - accuracy: 0.0000e+00
+Epoch 10/10
+31001/31001 [==============================] - 28s 918us/step - loss: 167.2274 - accuracy: 0.0000e+00
+At step  31000
+reward:  -0.4964436020198444
+total rewards  41.76108505123097
+At step  31100
+reward:  0.15511741089287057
+total rewards  37.207960909786344
+Landed it!
+[ 1.06398773e-01 -6.17235502e-04  0.00000000e+00  0.00000000e+00
+ -1.46985240e-03  0.00000000e+00  1.00000000e+00  1.00000000e+00]
+Successful Landing!!!  31175
+Total successes are:  9
+At step  31200
+reward:  -6.29742945364076
+total rewards  186.01204718627653
+At step  31300
+reward:  0.08184552566741826
+total rewards  314.06050101006764
+At step  31400
+reward:  -0.9771444052625845
+total rewards  478.9362442966988
+At step  31500
+reward:  0.13149191185625142
+total rewards  468.97769425627445
+At step  31600
+reward:  -0.5708273338404766
+total rewards  459.61214711723653
+At step  31700
+reward:  0.010047199692849063
+total rewards  450.65987446373805
+At step  31800
+reward:  -1.4603631268616766
+total rewards  441.9002062140349
+Landed it!
+[0.15842714 0.00294872 0.         0.         0.03755478 0.
+ 1.         1.        ]
+Successful Landing!!!  31863
+Total successes are:  10
+At step  31900
+reward:  9.244768423694895
+total rewards  93.63254593505175
+[ 0.1784132  -0.01678545 -1.1493082  -0.35483114  0.22166389 -2.54292043
+  1.          1.        ]
+training model model
+Epoch 1/10
+32001/32001 [==============================] - 30s 938us/step - loss: 167.8044 - accuracy: 0.0000e+00
+Epoch 2/10
+32001/32001 [==============================] - 30s 926us/step - loss: 166.8109 - accuracy: 0.0000e+00
+Epoch 3/10
+32001/32001 [==============================] - 30s 928us/step - loss: 166.5169 - accuracy: 0.0000e+00
+Epoch 4/10
+32001/32001 [==============================] - 29s 903us/step - loss: 166.5226 - accuracy: 0.0000e+00
+Epoch 5/10
+32001/32001 [==============================] - 29s 915us/step - loss: 166.6477 - accuracy: 0.0000e+00
+Epoch 6/10
+32001/32001 [==============================] - 29s 922us/step - loss: 166.6198 - accuracy: 0.0000e+00
+Epoch 7/10
+32001/32001 [==============================] - 29s 901us/step - loss: 166.0033 - accuracy: 0.0000e+00
+Epoch 8/10
+32001/32001 [==============================] - 29s 913us/step - loss: 165.8074 - accuracy: 0.0000e+00
+Epoch 9/10
+32001/32001 [==============================] - 29s 901us/step - loss: 165.9025 - accuracy: 0.0000e+00
+Epoch 10/10
+32001/32001 [==============================] - 29s 910us/step - loss: 166.2026 - accuracy: 0.0000e+00
+At step  32000
+reward:  -8.380785087049285
+total rewards  -209.03570059724635
+[ 0.16020384 -0.02776017 -0.86957463 -0.02321565  0.01060215 -0.12434498
+  1.          0.        ]
+At step  32100
+reward:  3.2373719390617413
+total rewards  -100.51061741986534
+At step  32200
+reward:  -5.729212189714104
+total rewards  -137.1978403437431
+At step  32300
+reward:  7.3099631032413654
+total rewards  -87.96374401949382
+At step  32400
+reward:  -2.1159649779452563
+total rewards  -167.11791162084492
+At step  32500
+reward:  -1.3523575191265564
+total rewards  -214.65741974281858
+[ 0.98363209 -0.1939017   0.6634351  -0.14686027 -0.24367706  0.26773765
+  0.          1.        ]
+At step  32600
+reward:  8.302243313421428
+total rewards  -169.4864608398581
+At step  32700
+reward:  -4.89645412905542
+total rewards  -177.07086442295633
+[ 0.79745941 -0.13448219  0.50863902 -0.76149003  0.27304277  4.69493516
+  1.          1.        ]
+At step  32800
+reward:  -10.130984653215048
+total rewards  -106.03598152242184
+At step  32900
+reward:  -26.637500063684264
+total rewards  7.772697843542476
+[ 0.84138756 -0.06702391  1.34212557  0.69686222 -1.53208268 -1.21874245
+  1.          0.        ]
+training model model
+Epoch 1/10
+33001/33001 [==============================] - 30s 897us/step - loss: 164.6923 - accuracy: 0.0000e+00
+Epoch 2/10
+33001/33001 [==============================] - 30s 901us/step - loss: 164.6215 - accuracy: 0.0000e+00
+Epoch 3/10
+33001/33001 [==============================] - 29s 890us/step - loss: 163.5862 - accuracy: 0.0000e+00
+Epoch 4/10
+33001/33001 [==============================] - 29s 886us/step - loss: 164.0959 - accuracy: 0.0000e+00
+Epoch 5/10
+33001/33001 [==============================] - 30s 901us/step - loss: 163.7062 - accuracy: 0.0000e+00
+Epoch 6/10
+33001/33001 [==============================] - 30s 895us/step - loss: 163.5885 - accuracy: 0.0000e+00
+Epoch 7/10
+33001/33001 [==============================] - 30s 897us/step - loss: 163.5341 - accuracy: 0.0000e+00
+Epoch 8/10
+33001/33001 [==============================] - 29s 893us/step - loss: 162.9093 - accuracy: 0.0000e+00
+Epoch 9/10
+33001/33001 [==============================] - 30s 895us/step - loss: 162.9728 - accuracy: 0.0000e+00
+Epoch 10/10
+33001/33001 [==============================] - 30s 895us/step - loss: 162.2548 - accuracy: 0.0000e+00
+At step  33000
+reward:  9.159060759814562
+total rewards  -196.76174824308384
+At step  33100
+reward:  -7.06192605570656
+total rewards  -313.32253401066555
+[-0.88793606  0.40503398 -2.03807847 -0.59537612 -0.06276892 -0.41634381
+  0.          0.        ]
+At step  33200
+reward:  -7.834925611497968
+total rewards  54.429541669124305
+At step  33300
+reward:  -3.434698870919498
+total rewards  46.99779714641377
+At step  33400
+reward:  0.6979524434129587
+total rewards  -46.196345340375174
+At step  33500
+reward:  -30.976078413338104
+total rewards  23.29264695701272
+[ 0.24436846 -0.00422522 -1.55842861  0.46003077  1.76542222  1.60656007
+  0.          1.        ]
+At step  33600
+reward:  -4.161735868867276
+total rewards  -203.67282142296577
+At step  33700
+reward:  -0.8290636447042637
+total rewards  -201.6640597285894
+At step  33800
+reward:  -11.024042940526535
+total rewards  -133.2870904916997
+Landed it!
+[ 6.41943932e-02 -3.63286336e-05  3.85226160e-02  2.22826108e-03
+ -8.44152179e-03 -7.84623375e-03  1.00000000e+00  1.00000000e+00]
+Successful Landing!!!  33863
+Total successes are:  11
+At step  33900
+reward:  -6.988508720643708
+total rewards  184.31499441080544
+training model model
+Epoch 1/10
+34001/34001 [==============================] - 32s 938us/step - loss: 162.5760 - accuracy: 0.0000e+00
+Epoch 2/10
+34001/34001 [==============================] - 32s 930us/step - loss: 161.7513 - accuracy: 0.0000e+00
+Epoch 3/10
+34001/34001 [==============================] - 31s 918us/step - loss: 162.2581 - accuracy: 0.0000e+00
+Epoch 4/10
+34001/34001 [==============================] - 31s 922us/step - loss: 160.8763 - accuracy: 0.0000e+00
+Epoch 5/10
+34001/34001 [==============================] - 31s 917us/step - loss: 161.2415 - accuracy: 0.0000e+00
+Epoch 6/10
+34001/34001 [==============================] - 30s 894us/step - loss: 161.2907 - accuracy: 0.0000e+00
+Epoch 7/10
+34001/34001 [==============================] - 30s 892us/step - loss: 160.9719 - accuracy: 0.0000e+00
+Epoch 8/10
+34001/34001 [==============================] - 30s 881us/step - loss: 161.3709 - accuracy: 0.0000e+00
+Epoch 9/10
+34001/34001 [==============================] - 31s 905us/step - loss: 160.4103 - accuracy: 0.0000e+00
+Epoch 10/10
+34001/34001 [==============================] - 30s 887us/step - loss: 160.1823 - accuracy: 0.0000e+00
+At step  34000
+reward:  2.3691384452499347
+total rewards  96.73177485431225
+At step  34100
+reward:  -5.594648919704793
+total rewards  140.91793445765464
+At step  34200
+reward:  -4.555580134706857
+total rewards  121.54132840809937
+At step  34300
+reward:  -0.740173587786098
+total rewards  -18.24627472829693
+At step  34400
+reward:  0.39715415423012246
+total rewards  196.25406153893914
+Landed it!
+[ 0.63662872 -0.0045263   0.          0.          0.02961349  0.
+  1.          1.        ]
+Successful Landing!!!  34448
+Total successes are:  12
+At step  34500
+reward:  4.956508177487074
+total rewards  148.24991655808395
+At step  34600
+reward:  8.02224442563495
+total rewards  362.4477211884664
+Landed it!
+[ 3.87494087e-02 -2.86525091e-04  1.65942401e-01  4.84255351e-07
+ -4.80774464e-03  9.41770679e-08  1.00000000e+00  1.00000000e+00]
+Successful Landing!!!  34669
+Total successes are:  13
+At step  34700
+reward:  -0.3207845148544526
+total rewards  180.7879348826496
+At step  34800
+reward:  3.8468707399606705
+total rewards  173.02159575808452
+At step  34900
+reward:  1.6252678246895094
+total rewards  175.3532789893476
+training model model
+Epoch 1/10
+35001/35001 [==============================] - 33s 932us/step - loss: 160.1208 - accuracy: 0.0000e+00
+Epoch 2/10
+35001/35001 [==============================] - 32s 906us/step - loss: 160.3003 - accuracy: 0.0000e+00
+Epoch 3/10
+35001/35001 [==============================] - 32s 914us/step - loss: 159.8623 - accuracy: 0.0000e+00
+Epoch 4/10
+35001/35001 [==============================] - 32s 908us/step - loss: 159.6278 - accuracy: 0.0000e+00
+Epoch 5/10
+35001/35001 [==============================] - 32s 904us/step - loss: 159.3876 - accuracy: 0.0000e+00
+Epoch 6/10
+35001/35001 [==============================] - 32s 920us/step - loss: 159.3978 - accuracy: 0.0000e+00
+Epoch 7/10
+35001/35001 [==============================] - 31s 895us/step - loss: 158.4254 - accuracy: 0.0000e+00
+Epoch 8/10
+35001/35001 [==============================] - 31s 895us/step - loss: 159.8598 - accuracy: 0.0000e+00
+Epoch 9/10
+35001/35001 [==============================] - 31s 896us/step - loss: 159.0584 - accuracy: 0.0000e+00
+Epoch 10/10
+35001/35001 [==============================] - 31s 892us/step - loss: 158.7025 - accuracy: 0.0000e+00
+At step  35000
+reward:  -5.221385848191048
+total rewards  368.88441615390934
+At step  35100
+reward:  -1.5808734759023437
+total rewards  435.28071901282476
+At step  35200
+reward:  -0.1632812515699414
+total rewards  425.12229916422194
+At step  35300
+reward:  0.33163894339086697
+total rewards  412.4471848917103
+At step  35400
+reward:  0.4137516020895316
+total rewards  400.2848809918371
+At step  35500
+reward:  1.3637180636636836
+total rewards  389.1273746307201
+At step  35600
+reward:  -1.714264639736814
+total rewards  379.69726335499143
+At step  35700
+reward:  -1.997532552872787
+total rewards  368.0646935746819
+At step  35800
+reward:  0.08072763822807583
+total rewards  355.1427639276278
+At step  35900
+reward:  -1.160811375018982
+total rewards  342.43488430981483
+training model model
+Epoch 1/10
+36001/36001 [==============================] - 33s 917us/step - loss: 154.7747 - accuracy: 0.0000e+00
+Epoch 2/10
+36001/36001 [==============================] - 32s 898us/step - loss: 154.5942 - accuracy: 0.0000e+00
+Epoch 3/10
+36001/36001 [==============================] - 32s 897us/step - loss: 154.2992 - accuracy: 0.0000e+00
+Epoch 4/10
+36001/36001 [==============================] - 32s 898us/step - loss: 153.8535 - accuracy: 0.0000e+00
+Epoch 5/10
+36001/36001 [==============================] - 32s 889us/step - loss: 153.8810 - accuracy: 0.0000e+00
+Epoch 6/10
+36001/36001 [==============================] - 32s 892us/step - loss: 154.1653 - accuracy: 0.0000e+00
+Epoch 7/10
+36001/36001 [==============================] - 32s 902us/step - loss: 154.1429 - accuracy: 0.0000e+00
+Epoch 8/10
+36001/36001 [==============================] - 32s 879us/step - loss: 153.5897 - accuracy: 0.0000e+00
+Epoch 9/10
+36001/36001 [==============================] - 32s 891us/step - loss: 153.8441 - accuracy: 0.0000e+00
+Epoch 10/10
+36001/36001 [==============================] - 32s 895us/step - loss: 152.5841 - accuracy: 0.0000e+00
+At step  36000
+reward:  0.30659829229508107
+total rewards  330.30748564577283
+At step  36100
+reward:  -1.7788718993997503
+total rewards  322.20745130341766
+At step  36200
+reward:  0.36589897935840265
+total rewards  316.3620289980151
+Landed it!
+[0.19600506 0.0062408  0.         0.         0.08040574 0.
+ 1.         1.        ]
+Successful Landing!!!  36273
+Total successes are:  14
+At step  36300
+reward:  7.91670668640536
+total rewards  207.8691818208029
+At step  36400
+reward:  -7.150495543304939
+total rewards  222.3840709019315
+At step  36500
+reward:  -7.376134930433423
+total rewards  197.38642136108038
+At step  36600
+reward:  1.8758965517347357
+total rewards  217.15191936796845
+Landed it!
+[ 0.46869402  0.07108017  0.          0.         -0.14918798  0.
+  1.          1.        ]
+Successful Landing!!!  36696
+Total successes are:  15
+At step  36700
+reward:  -3.258233944038404
+total rewards  182.05584760118995
+[-0.37091732 -0.07640898 -0.93164428 -0.36242723  0.45772728 -1.05700366
+  1.          1.        ]
+At step  36800
+reward:  4.860149530441622
+total rewards  -120.3972357714513
+[-0.07697544 -0.02511374 -0.96654232 -0.24042826 -0.06174506  1.36903477
+  1.          1.        ]
+At step  36900
+reward:  2.427780876992859
+total rewards  -153.43741840853068
+training model model
+Epoch 1/10
+37001/37001 [==============================] - 22s 585us/step - loss: 154.2548 - accuracy: 0.0000e+00
+Epoch 2/10
+37001/37001 [==============================] - 21s 576us/step - loss: 153.1438 - accuracy: 0.0000e+00
+Epoch 3/10
+37001/37001 [==============================] - 21s 578us/step - loss: 153.2873 - accuracy: 0.0000e+00
+Epoch 4/10
+37001/37001 [==============================] - 27s 723us/step - loss: 153.2953 - accuracy: 0.0000e+00
+Epoch 5/10
+37001/37001 [==============================] - 33s 902us/step - loss: 153.7027 - accuracy: 0.0000e+00
+Epoch 6/10
+37001/37001 [==============================] - 34s 918us/step - loss: 153.5122 - accuracy: 0.0000e+00
+Epoch 7/10
+37001/37001 [==============================] - 34s 911us/step - loss: 153.0937 - accuracy: 0.0000e+00
+Epoch 8/10
+37001/37001 [==============================] - 34s 906us/step - loss: 153.0845 - accuracy: 0.0000e+00
+Epoch 9/10
+37001/37001 [==============================] - 34s 917us/step - loss: 152.6878 - accuracy: 0.0000e+00
+Epoch 10/10
+37001/37001 [==============================] - 34s 910us/step - loss: 152.5546 - accuracy: 0.0000e+00
+At step  37000
+reward:  -2.447049597191782
+total rewards  -159.64766786770403
+At step  37100
+reward:  -0.7388209702133028
+total rewards  -152.6522909107076
+At step  37200
+reward:  0.015339694554534516
+total rewards  -45.046235031912786
+Landed it!
+[ 6.01356506e-02 -1.37894948e-04  5.47396342e-02 -4.05470996e-04
+ -4.84506506e-03 -1.07391252e-04  1.00000000e+00  1.00000000e+00]
+Successful Landing!!!  37229
+Total successes are:  16
+At step  37300
+reward:  0.17798568650351
+total rewards  114.0745264066129
+[-1.01734405  0.42197219 -2.08258915 -0.53257545 -0.1774698  -0.40824997
+  0.          0.        ]
+At step  37400
+reward:  0.2506100910388446
+total rewards  -176.27260433924587
+At step  37500
+reward:  -3.1678608972045983
+total rewards  -296.40198373914274
+[-0.83657384  0.19673615 -2.09763575 -0.84156413 -0.29782078 -0.81923914
+  0.          0.        ]
+At step  37600
+reward:  -7.185955185286223
+total rewards  74.45220555322796
+At step  37700
+reward:  -4.529938036872259
+total rewards  85.07639428365638
+At step  37800
+reward:  -6.383424915442109
+total rewards  103.7005916928994
+At step  37900
+reward:  -4.7599641234166405
+total rewards  49.036977352869286
+Landed it!
+[-4.08857346e-02 -4.13554509e-04  4.07767097e-02 -2.21438547e-05
+ -5.84682915e-03 -5.63610168e-06  1.00000000e+00  1.00000000e+00]
+Successful Landing!!!  37952
+Total successes are:  17
+training model model
+Epoch 1/10
+38001/38001 [==============================] - 35s 914us/step - loss: 152.6298 - accuracy: 0.0000e+00
+Epoch 2/10
+38001/38001 [==============================] - 34s 886us/step - loss: 152.3997 - accuracy: 0.0000e+00
+Epoch 3/10
+38001/38001 [==============================] - 33s 878us/step - loss: 152.1886 - accuracy: 0.0000e+00
+Epoch 4/10
+38001/38001 [==============================] - 34s 884us/step - loss: 152.0881 - accuracy: 0.0000e+00
+Epoch 5/10
+38001/38001 [==============================] - 34s 882us/step - loss: 151.7735 - accuracy: 0.0000e+00
+Epoch 6/10
+38001/38001 [==============================] - 34s 895us/step - loss: 152.2724 - accuracy: 0.0000e+00
+Epoch 7/10
+38001/38001 [==============================] - 34s 885us/step - loss: 151.4907 - accuracy: 0.0000e+00
+Epoch 8/10
+38001/38001 [==============================] - 24s 624us/step - loss: 151.5690 - accuracy: 0.0000e+00
+Epoch 9/10
+38001/38001 [==============================] - 21s 560us/step - loss: 151.5872 - accuracy: 0.0000e+00
+Epoch 10/10
+38001/38001 [==============================] - 21s 563us/step - loss: 151.3047 - accuracy: 0.0000e+00
+At step  38000
+reward:  -6.2538421168645035
+total rewards  183.69381323323088
+[-6.71609402e-01 -2.31414944e-01 -1.43125153e+00 -4.67549589e-01
+  4.55901712e-01  1.11665770e-07  1.00000000e+00  1.00000000e+00]
+At step  38100
+reward:  -1.0209500684340607
+total rewards  -174.1335692893473
+[-0.32591562  0.54010916 -2.9523468  -0.43137378  0.71426851  0.53053502
+  0.          0.        ]
+At step  38200
+reward:  1.3670852359594303
+total rewards  -7.384853487548803
+[-1.00467689 -0.036785   -0.83375525 -0.84618658 -0.40086338 -0.34927058
+  0.          0.        ]
+At step  38300
+reward:  -10.112584458020288
+total rewards  -174.0624431109163
+At step  38400
+reward:  -5.355725627501787
+total rewards  -264.4105171463751
+[-0.9616851   0.20595427 -1.89750592 -0.61954922 -0.1270756  -0.53577471
+  0.          0.        ]
+At step  38500
+reward:  -4.0175050225162785
+total rewards  3.202249844277355
+At step  38600
+reward:  -4.0529902668489415
+total rewards  -209.00924783640036
+At step  38700
+reward:  1.837059736313722
+total rewards  -177.7877373832839
+At step  38800
+reward:  -1.7174859139448815
+total rewards  -3.8798987776666927
+At step  38900
+reward:  2.6497342857186945
+total rewards  99.82257279730993
+Landed it!
+[ 0.42234306 -0.05567705  0.          0.          0.02847143  0.
+  1.          1.        ]
+Successful Landing!!!  38919
+Total successes are:  18
+training model model
+Epoch 1/10
+39001/39001 [==============================] - 30s 781us/step - loss: 152.7512 - accuracy: 0.0000e+00
+Epoch 2/10
+39001/39001 [==============================] - 22s 573us/step - loss: 152.4159 - accuracy: 0.0000e+00
+Epoch 3/10
+39001/39001 [==============================] - 22s 577us/step - loss: 152.5640 - accuracy: 0.0000e+00
+Epoch 4/10
+39001/39001 [==============================] - 22s 570us/step - loss: 152.5357 - accuracy: 0.0000e+00
+Epoch 5/10
+39001/39001 [==============================] - 23s 581us/step - loss: 152.4770 - accuracy: 0.0000e+00
+Epoch 6/10
+39001/39001 [==============================] - 22s 567us/step - loss: 151.8123 - accuracy: 0.0000e+00
+Epoch 7/10
+39001/39001 [==============================] - 22s 572us/step - loss: 151.6705 - accuracy: 0.0000e+00
+Epoch 8/10
+39001/39001 [==============================] - 22s 573us/step - loss: 151.6230 - accuracy: 0.0000e+00
+Epoch 9/10
+39001/39001 [==============================] - 23s 580us/step - loss: 151.4909 - accuracy: 0.0000e+00
+Epoch 10/10
+39001/39001 [==============================] - 23s 587us/step - loss: 151.9991 - accuracy: 0.0000e+00
+At step  39000
+reward:  -2.848399473024802
+total rewards  123.62479694712655
+[-0.56934958 -0.11065735 -0.39256108 -0.04042395  0.04707769 -0.20590919
+  1.          1.        ]
+At step  39100
+reward:  1.6940895345468558
+total rewards  -186.17101640390422
+At step  39200
+reward:  -6.350446624798276
+total rewards  -279.1825708821733
+At step  39300
+reward:  -10.819207833138622
+total rewards  -118.96076587393468
+[-0.84751167 -0.16121079 -0.64924749  0.53096803  1.34028363  1.6356562
+  0.          1.        ]
+[ 3.87479782e-02 -2.85175260e-02 -9.83215491e-01  9.54360003e-05
+ -1.45614336e-04 -5.89166547e-08  1.00000000e+00  1.00000000e+00]
+At step  39400
+reward:  1.5163102940920894
+total rewards  -142.31972668552484
+At step  39500
+reward:  -1.4376430101289321
+total rewards  -248.97854356230258
+At step  39600
+reward:  -5.09629001103709
+total rewards  -209.1620546421699
+At step  39700
+reward:  -9.800110415154972
+total rewards  -246.72038183830233
+At step  39800
+reward:  5.480145024414062
+total rewards  -264.7620973040758
+[-1.01071741  0.01791969 -1.10502338 -0.26150584  0.28906506 -0.40833886
+  0.          0.        ]
+At step  39900
+reward:  -15.0811845838672
+total rewards  -416.6623498864684
+[-1.01010618  0.90957537 -1.67213106 -0.03753464 -0.23498736 -0.34270263
+  0.          0.        ]
+[-0.53861046 -0.05687644 -0.04441925 -0.10327573 -0.57530349  0.64369559
+  1.          0.        ]
+training model model
+Epoch 1/10
+40001/40001 [==============================] - 36s 908us/step - loss: 154.3614 - accuracy: 0.0000e+00
+Epoch 2/10
+40001/40001 [==============================] - 36s 901us/step - loss: 153.7371 - accuracy: 0.0000e+00
+Epoch 3/10
+40001/40001 [==============================] - 36s 904us/step - loss: 153.7133 - accuracy: 0.0000e+00
+Epoch 4/10
+40001/40001 [==============================] - 36s 905us/step - loss: 153.5447 - accuracy: 0.0000e+00
+Epoch 5/10
+40001/40001 [==============================] - 36s 908us/step - loss: 153.4537 - accuracy: 0.0000e+00
+Epoch 6/10
+40001/40001 [==============================] - 36s 895us/step - loss: 153.4069 - accuracy: 0.0000e+00
+Epoch 7/10
+40001/40001 [==============================] - 36s 896us/step - loss: 153.1557 - accuracy: 0.0000e+00
+Epoch 8/10
+40001/40001 [==============================] - 36s 907us/step - loss: 153.1774 - accuracy: 0.0000e+00
+Epoch 9/10
+40001/40001 [==============================] - 36s 900us/step - loss: 152.7011 - accuracy: 0.0000e+00
+Epoch 10/10
+40001/40001 [==============================] - 36s 901us/step - loss: 151.9975 - accuracy: 0.0000e+00
+At step  40000
+reward:  -4.222514306045215
+total rewards  -100.04840964753622
+At step  40100
+reward:  5.101868301545186
+total rewards  -270.22853382214146
+At step  40200
+reward:  -1.056585773507773
+total rewards  -299.0246481935709
+At step  40300
+reward:  1.5078099668216693
+total rewards  62.53459570928379
+At step  40400
+reward:  28.276129712867764
+total rewards  -172.91090009135584
+At step  40500
+reward:  -0.005636071372379092
+total rewards  -10.527083620460392
+At step  40600
+reward:  -0.06283440937596652
+total rewards  -13.324473716763894
+At step  40700
+reward:  -2.258435016747857
+total rewards  -23.944095209140464
+Landed it!
+[ 0.44082651 -0.06048436  0.          0.          0.14990976  0.
+  1.          1.        ]
+Successful Landing!!!  40784
+Total successes are:  19
+At step  40800
+reward:  1.563143664289795
+total rewards  207.65416582420212
+At step  40900
+reward:  -0.9713825849215378
+total rewards  157.1366823054079
+Landed it!
+[ 1.60503387e-04  1.72789733e-03  1.60482762e-02 -3.25251474e-04
+  5.44236042e-03 -1.07348955e-04  1.00000000e+00  1.00000000e+00]
+Successful Landing!!!  40992
+Total successes are:  20
+training model model
+Epoch 1/10
+41001/41001 [==============================] - 38s 925us/step - loss: 154.0662 - accuracy: 0.0000e+00
+Epoch 2/10
+41001/41001 [==============================] - 37s 913us/step - loss: 153.2645 - accuracy: 0.0000e+00
+Epoch 3/10
+41001/41001 [==============================] - 35s 849us/step - loss: 152.6330 - accuracy: 0.0000e+00
+Epoch 4/10
+41001/41001 [==============================] - 37s 912us/step - loss: 153.2630 - accuracy: 0.0000e+00
+Epoch 5/10
+41001/41001 [==============================] - 38s 918us/step - loss: 153.1044 - accuracy: 0.0000e+00
+Epoch 6/10
+41001/41001 [==============================] - 37s 909us/step - loss: 152.5480 - accuracy: 0.0000e+00
+Epoch 7/10
+41001/41001 [==============================] - 38s 916us/step - loss: 152.9321 - accuracy: 0.0000e+00
+Epoch 8/10
+41001/41001 [==============================] - 37s 904us/step - loss: 152.8579 - accuracy: 0.0000e+00
+Epoch 9/10
+41001/41001 [==============================] - 37s 903us/step - loss: 152.1453 - accuracy: 0.0000e+00
+Epoch 10/10
+41001/41001 [==============================] - 37s 912us/step - loss: 152.0453 - accuracy: 0.0000e+00
+At step  41000
+reward:  13.435375754618008
+total rewards  293.2000874284634
+At step  41100
+reward:  -1.0915149045360453
+total rewards  219.62067528945133
+[-1.00672215  0.68101559 -2.19652637 -0.52489736  0.03788544 -0.58959786
+  0.          0.        ]
+At step  41200
+reward:  -7.402958930916174
+total rewards  -164.1676183611808
+At step  41300
+reward:  7.505385408930003
+total rewards  -154.92125949352024
+At step  41400
+reward:  5.102753808723043
+total rewards  74.46562054195105
+At step  41500
+reward:  -6.226413298296859
+total rewards  82.66405458558633
+Landed it!
+[ 0.39442902 -0.05290503  0.          0.         -0.1057604   0.
+  1.          1.        ]
+Successful Landing!!!  41528
+Total successes are:  21
+At step  41600
+reward:  -11.249913160095812
+total rewards  259.0000321371469
+At step  41700
+reward:  -2.6880546447033384
+total rewards  231.95961879128433
+At step  41800
+reward:  -2.2040881120893565
+total rewards  151.94925803954155
+At step  41900
+reward:  -12.330306482493322
+total rewards  125.50692916612205
+training model model
+Epoch 1/10
+42001/42001 [==============================] - 38s 898us/step - loss: 153.5431 - accuracy: 0.0000e+00
+Epoch 2/10
+42001/42001 [==============================] - 38s 900us/step - loss: 153.4956 - accuracy: 0.0000e+00
+Epoch 3/10
+42001/42001 [==============================] - 38s 906us/step - loss: 153.1399 - accuracy: 0.0000e+00
+Epoch 4/10
+42001/42001 [==============================] - 38s 902us/step - loss: 153.4205 - accuracy: 0.0000e+00
+Epoch 5/10
+42001/42001 [==============================] - 38s 906us/step - loss: 152.9901 - accuracy: 0.0000e+00
+Epoch 6/10
+42001/42001 [==============================] - 37s 890us/step - loss: 153.1393 - accuracy: 0.0000e+00
+Epoch 7/10
+42001/42001 [==============================] - 38s 899us/step - loss: 152.7830 - accuracy: 0.0000e+00
+Epoch 8/10
+42001/42001 [==============================] - 38s 899us/step - loss: 152.4286 - accuracy: 0.0000e+00
+Epoch 9/10
+42001/42001 [==============================] - 37s 892us/step - loss: 152.4894 - accuracy: 0.0000e+00
+Epoch 10/10
+42001/42001 [==============================] - 38s 893us/step - loss: 152.2386 - accuracy: 0.0000e+00
+At step  42000
+reward:  -0.1684419061309793
+total rewards  355.33201322718344
+Landed it!
+[-9.92505074e-02 -6.85971578e-04  1.34968708e-01 -2.75942626e-04
+  2.16377061e-03 -6.62101714e-05  1.00000000e+00  1.00000000e+00]
+Successful Landing!!!  42059
+Total successes are:  22
+At step  42100
+reward:  -11.115470683779202
+total rewards  128.09711935199863
+At step  42200
+reward:  0.5817566808815198
+total rewards  161.50821149560818
+At step  42300
+reward:  4.8277755467620285
+total rewards  200.71371608687733
+[ 0.324508   -0.05207183  0.54185732 -0.14434397 -0.46742883  0.24932462
+  1.          1.        ]
+At step  42400
+reward:  2.7772413491350822
+total rewards  -70.14132992794147
+At step  42500
+reward:  6.350251846090858
+total rewards  -163.99919490791393
+At step  42600
+reward:  0.19404810467825367
+total rewards  -94.90951436693264
+At step  42700
+reward:  -3.5704801356226206
+total rewards  -32.452497052992456
+At step  42800
+reward:  -3.7533151398621962
+total rewards  -94.70192169855044
+At step  42900
+reward:  -1.7157197810042943
+total rewards  126.36338710638363
+training model model
+Epoch 1/10
+43001/43001 [==============================] - 39s 906us/step - loss: 151.4261 - accuracy: 0.0000e+00
+Epoch 2/10
+43001/43001 [==============================] - 39s 899us/step - loss: 151.0579 - accuracy: 0.0000e+00
+Epoch 3/10
+43001/43001 [==============================] - 39s 897us/step - loss: 151.0462 - accuracy: 0.0000e+00
+Epoch 4/10
+43001/43001 [==============================] - 39s 905us/step - loss: 150.5997 - accuracy: 0.0000e+00
+Epoch 5/10
+43001/43001 [==============================] - 39s 908us/step - loss: 150.4281 - accuracy: 0.0000e+00
+Epoch 6/10
+43001/43001 [==============================] - 38s 889us/step - loss: 150.4050 - accuracy: 0.0000e+00
+Epoch 7/10
+43001/43001 [==============================] - 39s 897us/step - loss: 150.2059 - accuracy: 0.0000e+00
+Epoch 8/10
+43001/43001 [==============================] - 38s 883us/step - loss: 149.9082 - accuracy: 0.0000e+00
+Epoch 9/10
+43001/43001 [==============================] - 38s 894us/step - loss: 150.2689 - accuracy: 0.0000e+00
+Epoch 10/10
+43001/43001 [==============================] - 39s 899us/step - loss: 149.8729 - accuracy: 0.0000e+00
+At step  43000
+reward:  35.15698821309236
+total rewards  77.54161095509926
+Landed it!
+[ 1.13919830e-01  8.71245066e-05  0.00000000e+00  0.00000000e+00
+ -5.97499171e-03  0.00000000e+00  1.00000000e+00  1.00000000e+00]
+Successful Landing!!!  43016
+Total successes are:  23
+[ 1.00461216  0.54048443  2.12092972 -0.42355675 -0.1530658   0.25539374
+  0.          0.        ]
+At step  43100
+reward:  -2.8828982200628928
+total rewards  -90.39348294582796
+At step  43200
+reward:  -4.332755006525239
+total rewards  -151.27895921062853
+At step  43300
+reward:  -0.4413386944188075
+total rewards  -287.1588129561197
+At step  43400
+reward:  8.777483326715869
+total rewards  -355.2658592684714
+[-0.50842772 -0.06813111  0.36458282 -0.06009354 -0.0339517   0.36827274
+  1.          1.        ]
+At step  43500
+reward:  2.844481147691926
+total rewards  -234.01334477571254
+[ 0.64286251  0.03822795 -0.14783579 -0.08336292 -0.1172333  -0.71131253
+  1.          1.        ]
+At step  43600
+reward:  -2.331565372835259
+total rewards  -144.56873735420214
+[-1.00902591  0.54540749 -1.20716818 -0.49080467 -0.08886216 -0.31556666
+  0.          0.        ]
+At step  43700
+reward:  -5.285139566020868
+total rewards  -83.68166407860889
+At step  43800
+reward:  -2.400984625150343
+total rewards  -65.40722746546687
+At step  43900
+reward:  -6.419425949699324
+total rewards  -87.29981023473755
+training model model
+Epoch 1/10
+44001/44001 [==============================] - 39s 888us/step - loss: 150.4494 - accuracy: 0.0000e+00
+Epoch 2/10
+44001/44001 [==============================] - 39s 896us/step - loss: 150.7836 - accuracy: 0.0000e+00
+Epoch 3/10
+44001/44001 [==============================] - 39s 890us/step - loss: 150.8003 - accuracy: 0.0000e+00
+Epoch 4/10
+44001/44001 [==============================] - 40s 899us/step - loss: 150.2672 - accuracy: 0.0000e+00
+Epoch 5/10
+44001/44001 [==============================] - 39s 887us/step - loss: 150.1916 - accuracy: 0.0000e+00
+Epoch 6/10
+44001/44001 [==============================] - 39s 892us/step - loss: 149.2754 - accuracy: 0.0000e+00
+Epoch 7/10
+44001/44001 [==============================] - 39s 894us/step - loss: 149.9058 - accuracy: 0.0000e+00
+Epoch 8/10
+44001/44001 [==============================] - 39s 887us/step - loss: 150.0702 - accuracy: 0.0000e+00
+Epoch 9/10
+44001/44001 [==============================] - 39s 893us/step - loss: 149.6420 - accuracy: 0.0000e+00
+Epoch 10/10
+44001/44001 [==============================] - 39s 895us/step - loss: 149.8347 - accuracy: 0.0000e+00
+At step  44000
+reward:  -1.142037091324061
+total rewards  60.44351347164603
+At step  44100
+reward:  -0.09552461843615233
+total rewards  80.16555772155316
+At step  44200
+reward:  -2.013249258439146
+total rewards  58.11091842313994
+At step  44300
+reward:  0.9943352584412382
+total rewards  34.984081658237805
+At step  44400
+reward:  2.377288435806736
+total rewards  17.084363790044435
+At step  44500
+reward:  -0.5383884854800627
+total rewards  -0.17366579397977755
+At step  44600
+reward:  -2.6068867579795767
+total rewards  -21.750063651798463
+At step  44700
+reward:  -0.7037948753893726
+total rewards  -38.525637679810444
+At step  44800
+reward:  -1.710134191547102
+total rewards  -56.04120441912564
+At step  44900
+reward:  1.3401360750425695
+total rewards  -77.01068486867949
+training model model
+Epoch 1/10
+45001/45001 [==============================] - 42s 924us/step - loss: 148.0418 - accuracy: 0.0000e+00
+Epoch 2/10
+45001/45001 [==============================] - 41s 907us/step - loss: 147.5095 - accuracy: 0.0000e+00
+Epoch 3/10
+45001/45001 [==============================] - 41s 907us/step - loss: 147.7498 - accuracy: 0.0000e+00
+Epoch 4/10
+45001/45001 [==============================] - 40s 893us/step - loss: 147.8091 - accuracy: 0.0000e+00
+Epoch 5/10
+45001/45001 [==============================] - 40s 894us/step - loss: 147.3325 - accuracy: 0.0000e+00
+Epoch 6/10
+45001/45001 [==============================] - 40s 894us/step - loss: 147.4952 - accuracy: 0.0000e+00
+Epoch 7/10
+45001/45001 [==============================] - 40s 890us/step - loss: 147.2302 - accuracy: 0.0000e+00
+Epoch 8/10
+45001/45001 [==============================] - 40s 891us/step - loss: 146.5614 - accuracy: 0.0000e+00
+Epoch 9/10
+45001/45001 [==============================] - 36s 801us/step - loss: 147.2132 - accuracy: 0.0000e+00
+Epoch 10/10
+45001/45001 [==============================] - 40s 894us/step - loss: 146.5196 - accuracy: 0.0000e+00
+At step  45000
+reward:  -2.985209645167147
+total rewards  -93.16831548498801
+At step  45100
+reward:  1.2531524456782537
+total rewards  -103.00410168191779
+At step  45200
+reward:  0.2643067218984214
+total rewards  -108.58844841570088
+Landed it!
+[0.11503506 0.00148624 0.         0.         0.007066   0.
+ 1.         1.        ]
+Successful Landing!!!  45230
+Total successes are:  24
+At step  45300
+reward:  -8.622426710600354
+total rewards  145.02925757029865
+At step  45400
+reward:  0.09005081878102011
+total rewards  194.47270291000177
+At step  45500
+reward:  7.033215934145728
+total rewards  212.49646614089622
+At step  45600
+reward:  5.381115101820606
+total rewards  216.92774236451567
+At step  45700
+reward:  2.9335459077165837
+total rewards  174.81705513078805
+At step  45800
+reward:  -6.1892212946892196
+total rewards  179.49961730354445
+[ 0.11515951 -0.02537405  0.13884497 -0.1400002  -0.05698011  0.79379853
+  1.          1.        ]
+At step  45900
+reward:  -4.6436201658726874
+total rewards  -223.75671557608555
+training model model
+Epoch 1/10
+46001/46001 [==============================] - 41s 898us/step - loss: 146.3439 - accuracy: 0.0000e+00
+Epoch 2/10
+46001/46001 [==============================] - 41s 896us/step - loss: 145.3318 - accuracy: 0.0000e+00
+Epoch 3/10
+46001/46001 [==============================] - 41s 893us/step - loss: 145.5562 - accuracy: 0.0000e+00
+Epoch 4/10
+46001/46001 [==============================] - 41s 889us/step - loss: 145.1550 - accuracy: 0.0000e+00
+Epoch 5/10
+46001/46001 [==============================] - 41s 887us/step - loss: 145.3208 - accuracy: 0.0000e+00
+Epoch 6/10
+46001/46001 [==============================] - 41s 895us/step - loss: 145.4127 - accuracy: 0.0000e+00
+Epoch 7/10
+46001/46001 [==============================] - 41s 884us/step - loss: 145.1914 - accuracy: 0.0000e+00
+Epoch 8/10
+46001/46001 [==============================] - 41s 899us/step - loss: 144.5721 - accuracy: 0.0000e+00
+Epoch 9/10
+46001/46001 [==============================] - 41s 883us/step - loss: 144.8785 - accuracy: 0.0000e+00
+Epoch 10/10
+46001/46001 [==============================] - 40s 880us/step - loss: 145.0135 - accuracy: 0.0000e+00
+At step  46000
+reward:  2.5281949079603936
+total rewards  -175.05697045869465
+Landed it!
+[-0.0706399  -0.00614881  0.01604763  0.0204106  -0.07403964  0.06918869
+  1.          1.        ]
+Successful Landing!!!  46059
+Total successes are:  25
+At step  46100
+reward:  -7.53157787731556
+total rewards  224.8365039097075
+At step  46200
+reward:  10.131478063227714
+total rewards  10.234524143284649
+At step  46300
+reward:  -4.696553269759833
+total rewards  52.791009680250696
+At step  46400
+reward:  4.820063999390145
+total rewards  231.21320373374527
+At step  46500
+reward:  -8.918521604453852
+total rewards  232.10873209945305
+Landed it!
+[0.18087263 0.00490909 0.         0.         0.06973617 0.
+ 1.         1.        ]
+Successful Landing!!!  46570
+Total successes are:  26
+At step  46600
+reward:  -8.847536817496598
+total rewards  178.68842175575924
+[-0.43727741  0.08233762 -0.68408028 -0.40964079 -0.2608285  -4.14849758
+  1.          1.        ]
+At step  46700
+reward:  1.5046465631590318
+total rewards  -139.00664330727707
+At step  46800
+reward:  -9.27732345751366
+total rewards  -51.24707584674111
+At step  46900
+reward:  1.7173318422419321
+total rewards  -3.3198115544718343
+training model model
+Epoch 1/10
+47001/47001 [==============================] - 42s 890us/step - loss: 146.1411 - accuracy: 0.0000e+00
+Epoch 2/10
+47001/47001 [==============================] - 41s 876us/step - loss: 146.2465 - accuracy: 0.0000e+00
+Epoch 3/10
+47001/47001 [==============================] - 42s 898us/step - loss: 145.8275 - accuracy: 0.0000e+00
+Epoch 4/10
+47001/47001 [==============================] - 42s 896us/step - loss: 145.9891 - accuracy: 0.0000e+00
+Epoch 5/10
+47001/47001 [==============================] - 41s 876us/step - loss: 145.7268 - accuracy: 0.0000e+00
+Epoch 6/10
+47001/47001 [==============================] - 42s 889us/step - loss: 145.7516 - accuracy: 0.0000e+00
+Epoch 7/10
+47001/47001 [==============================] - 42s 892us/step - loss: 145.8224 - accuracy: 0.0000e+00
+Epoch 8/10
+47001/47001 [==============================] - 42s 899us/step - loss: 145.3685 - accuracy: 0.0000e+00
+Epoch 9/10
+47001/47001 [==============================] - 42s 891us/step - loss: 145.2796 - accuracy: 0.0000e+00
+Epoch 10/10
+47001/47001 [==============================] - 42s 890us/step - loss: 145.5498 - accuracy: 0.0000e+00
+At step  47000
+reward:  1.7402404999751546
+total rewards  -23.50613545922178
+At step  47100
+reward:  -0.11592429067070359
+total rewards  -36.03660450579361
+At step  47200
+reward:  1.7148913922360949
+total rewards  -53.69865440657422
+At step  47300
+reward:  -2.8149677868712892
+total rewards  -66.51957020858835
+At step  47400
+reward:  1.5537074116798053
+total rewards  -82.03349585912738
+At step  47500
+reward:  -1.116216498952855
+total rewards  -93.30507241434667
+At step  47600
+reward:  0.1441724602060509
+total rewards  -109.75798738499644
+At step  47700
+reward:  -1.4832236264283467
+total rewards  -127.03565763397489
+At step  47800
+reward:  1.490837444369066
+total rewards  -146.35454946109334
+At step  47900
+reward:  -3.2797742895282482
+total rewards  -158.0403050102821
+training model model
+Epoch 1/10
+48001/48001 [==============================] - 43s 906us/step - loss: 144.1186 - accuracy: 0.0000e+00
+Epoch 2/10
+48001/48001 [==============================] - 43s 891us/step - loss: 144.1094 - accuracy: 0.0000e+00
+Epoch 3/10
+48001/48001 [==============================] - 43s 889us/step - loss: 143.7604 - accuracy: 0.0000e+00
+Epoch 4/10
+48001/48001 [==============================] - 43s 890us/step - loss: 144.0839 - accuracy: 0.0000e+00
+Epoch 5/10
+48001/48001 [==============================] - 43s 887us/step - loss: 143.8151 - accuracy: 0.0000e+00
+Epoch 6/10
+48001/48001 [==============================] - 43s 888us/step - loss: 143.4551 - accuracy: 0.0000e+00
+Epoch 7/10
+48001/48001 [==============================] - 43s 893us/step - loss: 144.0645 - accuracy: 0.0000e+00
+Epoch 8/10
+48001/48001 [==============================] - 43s 888us/step - loss: 143.7844 - accuracy: 0.0000e+00
+Epoch 9/10
+48001/48001 [==============================] - 43s 889us/step - loss: 143.5322 - accuracy: 0.0000e+00
+Epoch 10/10
+48001/48001 [==============================] - 43s 885us/step - loss: 143.4686 - accuracy: 0.0000e+00
+At step  48000
+reward:  -6.989543086273362
+total rewards  -173.78468887509126
+At step  48100
+reward:  0.5980728354181568
+total rewards  -193.75136276252394
+At step  48200
+reward:  0.23483391322932112
+total rewards  -209.49301858032229
+At step  48300
+reward:  0.04130270795949547
+total rewards  -232.38971589135073
+At step  48400
+reward:  -7.518478753688792
+total rewards  -241.54069925480215
+At step  48500
+reward:  -0.7369032623540275
+total rewards  -257.100794107117
+At step  48600
+reward:  -1.0073439449953725
+total rewards  -270.8577441454349
+At step  48700
+reward:  0.8838818493114021
+total rewards  -282.61743018486027
+At step  48800
+reward:  -0.06529742956985393
+total rewards  -294.06360597137166
+At step  48900
+reward:  -2.309297716173545
+total rewards  -309.40728063780114
+training model model
+Epoch 1/10
+49001/49001 [==============================] - 46s 939us/step - loss: 142.2469 - accuracy: 0.0000e+00
+Epoch 2/10
+49001/49001 [==============================] - 45s 924us/step - loss: 141.9616 - accuracy: 0.0000e+00
+Epoch 3/10
+49001/49001 [==============================] - 45s 920us/step - loss: 141.5850 - accuracy: 0.0000e+00
+Epoch 4/10
+49001/49001 [==============================] - 45s 918us/step - loss: 141.8737 - accuracy: 0.0000e+00
+Epoch 5/10
+49001/49001 [==============================] - 45s 918us/step - loss: 141.8535 - accuracy: 0.0000e+00
+Epoch 6/10
+49001/49001 [==============================] - 45s 914us/step - loss: 141.4504 - accuracy: 0.0000e+00
+Epoch 7/10
+49001/49001 [==============================] - 45s 924us/step - loss: 141.3144 - accuracy: 0.0000e+00
+Epoch 8/10
+49001/49001 [==============================] - 45s 911us/step - loss: 141.2920 - accuracy: 0.0000e+00
+Epoch 9/10
+49001/49001 [==============================] - 45s 924us/step - loss: 141.4385 - accuracy: 0.0000e+00
+Epoch 10/10
+49001/49001 [==============================] - 45s 914us/step - loss: 141.1963 - accuracy: 0.0000e+00
+At step  49000
+reward:  -0.6447218841962801
+total rewards  -323.50558828678714
+Landed it!
+[-0.80860517  0.07195883  0.          0.          0.08882017  0.
+  1.          1.        ]
+Successful Landing!!!  49015
+Total successes are:  27
+At step  49100
+reward:  1.1811000922760322
+total rewards  123.7396198916243
+At step  49200
+reward:  -10.1688900050354
+total rewards  -68.30976420441743
+[-0.76590347 -0.1001873   1.40312735 -0.20733069 -0.58070409  2.44222673
+  1.          0.        ]
+[-3.11815357e-01  3.23883120e-02  2.85556217e-02 -9.65611554e-03
+ -4.69098091e-01  1.91806796e-08  1.00000000e+00  1.00000000e+00]
+At step  49300
+reward:  -6.953363395304125
+total rewards  -150
+At step  49400
+reward:  -2.725963871923988
+total rewards  -251.70657555071736
+[-0.68135829  0.32526098 -2.04410934 -0.86139917  0.14248544 -0.64553471
+  0.          0.        ]
+At step  49500
+reward:  -9.819603886050068
+total rewards  5.886605539102062
+At step  49600
+reward:  -3.217462410990416
+total rewards  -142.08347232314253
+At step  49700
+reward:  -15.442956822007478
+total rewards  -117.50095704452912
+[-6.88403344e-01 -1.04143089e-01 -6.10064467e-03 -1.31811978e-03
+  3.13682944e-01 -1.23465952e-07  1.00000000e+00  1.00000000e+00]
+[-0.5652915   0.09546199 -0.89777064 -0.53973929 -0.21716192 -5.68258794
+  0.          1.        ]
+At step  49800
+reward:  3.062948358219168
+total rewards  -122.90789697392415
+At step  49900
+reward:  -5.398472075414658
+total rewards  -181.90271667715007
+[-0.52654319 -0.13624262  0.73849138  0.36085746 -1.53784108 -1.20068463
+  0.          0.        ]
+training model model
+Epoch 1/10
+50001/50001 [==============================] - 47s 933us/step - loss: 144.5013 - accuracy: 0.0000e+00
+Epoch 2/10
+50001/50001 [==============================] - 46s 917us/step - loss: 143.6311 - accuracy: 0.0000e+00
+Epoch 3/10
+50001/50001 [==============================] - 46s 919us/step - loss: 143.2119 - accuracy: 0.0000e+00
+Epoch 4/10
+50001/50001 [==============================] - 46s 915us/step - loss: 143.4674 - accuracy: 0.0000e+00
+Epoch 5/10
+50001/50001 [==============================] - 45s 902us/step - loss: 143.3307 - accuracy: 0.0000e+00
+Epoch 6/10
+50001/50001 [==============================] - 44s 889us/step - loss: 143.1571 - accuracy: 0.0000e+00
+Epoch 7/10
+50001/50001 [==============================] - 45s 897us/step - loss: 142.6142 - accuracy: 0.0000e+00
+Epoch 8/10
+50001/50001 [==============================] - 45s 895us/step - loss: 143.2407 - accuracy: 0.0000e+00
+Epoch 9/10
+50001/50001 [==============================] - 41s 816us/step - loss: 143.3590 - accuracy: 0.0000e+00
+Epoch 10/10
+50001/50001 [==============================] - 45s 893us/step - loss: 142.4147 - accuracy: 0.0000e+00
+At step  50000
+reward:  -4.955669720518368
+total rewards  -157.50000252326066
+At step  0
+reward:  -13.220133962006287
+total rewards  0
+[-0.35973625 -0.04945332 -0.60790706 -0.05847314  0.27033782 -1.00558201
+  1.          1.        ]
+At step  100
+reward:  -6.031574997901917
+total rewards  -138.76575131096214
+At step  200
+reward:  -6.402338081841967
+total rewards  -242.51914361355696
+[-6.46897316e-02 -2.85466369e-02 -9.69432116e-01 -2.87008011e-08
+  3.14680801e-04 -2.23007817e-07  1.00000000e+00  1.00000000e+00]
+At step  300
+reward:  1.8135735262878547
+total rewards  -148.26498502471117
+At step  400
+reward:  7.038057688470025
+total rewards  -180.24872350695588
+At step  500
+reward:  0.5180033960153754
+total rewards  -114.29927768777698
+At step  600
+reward:  -0.13849985670990728
+total rewards  -166.95640319170707
+[ 0.08903179 -0.02077317 -0.28467745 -0.09517676 -0.14398724  0.57918469
+  1.          0.        ]
+At step  700
+reward:  6.436679517367662
+total rewards  -101.11480005243368
+At step  800
+reward:  -2.0364736042221483
+total rewards  -90.87070730717993
+At step  900
+reward:  -0.3613605812756694
+total rewards  -115.5567507625971
+Landed it!
+[ 2.08950043e-02 -1.76995595e-04 -3.61476792e-04 -8.36258495e-04
+  5.92942443e-03  2.01930544e-04  1.00000000e+00  1.00000000e+00]
+Successful Landing!!!  973
+Total successes are:  27
+At step  1000
+reward:  4.788280618164261
+total rewards  218.62363131475948
+root@jetson-tx2:/home/nvidia/w251/homework/week11# 
+

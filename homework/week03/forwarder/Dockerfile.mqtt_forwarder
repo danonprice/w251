@@ -1,0 +1,29 @@
+# sudo docker build -t mqtt_forwarder -f Dockerfile.mqtt_forwarder .
+# sudo docker run --rm -ti --name mqtt_forwarder_0 --network face_detect_net -v /forwarder:/forwarder -w /forwarder mqtt_forwarder
+# sudo docker run --rm -ti --name mqtt_forwarder_0 --network face_detect_net -w /forwarder mqtt_forwarder
+
+FROM alpine
+# WORKDIR /
+# RUN echo -e "http://nl.alpinelinux.org/alpine/v3.9/main/" > /etc/apk/repositories
+# install mosquitto client
+# RUN echo "nameserver 8.8.8.8" > /etc/resolv.conf && \
+RUN apk update && \
+    apk add mosquitto-clients && \
+    apk add py3-paho-mqtt
+
+# CMD ping 172.18.0.2
+# CMD mosquitto_sub -h 172.18.0.2 -t tx2/face
+
+RUN mkdir forwarder
+COPY forward.py /forwarder/forward.py
+CMD python3 /forwarder/forward.py
+
+
+#RUN mkdir /home/face_detection
+#COPY detect_faces.py /home/face_detection/detect_faces.py
+#COPY haarcascade_frontalface_default.xml /home/face_detection/haarcascade_frontalface_default.xml
+#CMD python3 /home/face_detection/detect_faces.py
+
+# docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container_id>
+# 172.18.0.2
+# CMD python3 /forwarder/forward.py

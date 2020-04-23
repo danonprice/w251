@@ -1,0 +1,240 @@
+Using TensorFlow backend.
+2020-04-19 08:59:48.639693: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+/opt/venv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/opt/venv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/opt/venv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/opt/venv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/opt/venv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/opt/venv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/opt/venv/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/opt/venv/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/opt/venv/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/opt/venv/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/opt/venv/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/opt/venv/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+At step  0
+reward:  11.787750106822273
+total rewards  0
+[-0.3525753   0.01228467  0.3355852  -0.14407088 -0.22927171 -0.67661532
+  1.          0.        ]
+At step  100
+reward:  -13.605235146565633
+total rewards  -361.74751080970185
+[-0.51856313 -0.09932103 -1.51347001 -1.36138195  0.3448455   7.18888474
+  1.          1.        ]
+[-0.670415    0.03661853 -0.98968863  0.05939586  0.91405153  2.75423781
+  0.          1.        ]
+At step  200
+reward:  -12.460021724303544
+total rewards  -278.69505805050727
+[-2.81539440e-01 -4.52881273e-02 -1.13667329e+00 -1.62811690e-01
+  2.12084427e-01  1.02554842e-06  1.00000000e+00  1.00000000e+00]
+[ 0.64952068  0.14946523  1.17155075  0.02232842 -0.94936794 -3.24850623
+  1.          0.        ]
+At step  300
+reward:  -12.432170137762967
+total rewards  -300.4190355320955
+[-8.70478630e-02 -5.96384366e-03 -1.34505937e-01 -5.28408580e-01
+  4.80312735e-01 -6.28261693e+00  0.00000000e+00  1.00000000e+00]
+[ 0.54812183 -0.08474676  2.06125387 -0.24256587 -1.13839293 -4.6424729
+  1.          0.        ]
+At step  400
+reward:  -18.011683260518172
+total rewards  -224.04532233566454
+[ 0.5655839   0.02985559  0.55523908 -0.0062557  -0.5229007   1.86877775
+  1.          0.        ]
+[ 0.56494904  0.03252087  1.47537057 -0.12804557 -0.14267185  0.09107852
+  1.          1.        ]
+At step  500
+reward:  -6.107520546759022
+total rewards  -155.7647969386145
+Landed it!
+[-1.25718117e-02 -2.84908231e-02  2.53565860e-12 -8.69289883e-13
+  3.53817915e-04 -1.19882333e-11  1.00000000e+00  1.00000000e+00]
+Successful Landing!!!  538
+Total successes are:  1
+[ 0.52795162  0.10187026  1.51672284  0.58579487 -1.76030588 -3.86057504
+  1.          0.        ]
+At step  600
+reward:  -12.267453157451431
+total rewards  -124.46875138420405
+[-3.15802431e-01 -8.67190774e-02 -1.97848193e+00 -7.17633353e-01
+  4.98455554e-01  1.44797336e-07  1.00000000e+00  1.00000000e+00]
+At step  700
+reward:  -4.289822099420746
+total rewards  -509.7129363329563
+[-0.09297247 -0.01027326 -0.10644038 -0.99057335  0.3710421  -8.27110926
+  0.          1.        ]
+[-0.20754924 -0.0234915  -0.18488624 -0.21124416 -0.09116613  1.22158035
+  1.          1.        ]
+Landed it!
+[-4.81583595e-02 -2.85214361e-02 -9.49598663e-03  5.82254845e-08
+  7.17370771e-04 -1.14740070e-07  1.00000000e+00  1.00000000e+00]
+Successful Landing!!!  788
+Total successes are:  2
+At step  800
+reward:  -15.620037159985941
+total rewards  99.71464263021332
+[-0.53454075  0.0958644  -0.84540057 -0.91241063  0.2267966  -8.00044441
+  0.          0.        ]
+[-7.39210486e-01 -6.48613151e-02 -4.56756274e-01  3.88290485e-02
+ -1.26570806e-01  6.54141511e-08  1.00000000e+00  0.00000000e+00]
+At step  900
+reward:  -3.5355961061899874
+total rewards  -176.3489916620462
+[ 1.51453972e-01 -2.84969505e-02 -7.60793428e-10  1.75825219e-10
+  5.54629718e-04  6.28813076e-10  1.00000000e+00  1.00000000e+00]
+[-0.5395092   0.01026607 -0.16473611  0.10507202  1.53278649  0.60081557
+  0.          1.        ]
+At step  1000
+reward:  -13.175830865899684
+total rewards  -181.45201815983148
+[ 0.33151112 -0.08883669  1.5605766  -1.8603931  -0.52546555  7.01786741
+  0.          1.        ]
+[-0.64415202  0.11408735  0.68371693 -0.38664063  0.09235648 -2.89174779
+  0.          1.        ]
+At step  1100
+reward:  -13.995533708172559
+total rewards  -150
+[ 2.74705982e-01 -3.40918859e-03  2.08081643e-01 -1.25401794e+00
+ -2.22911462e-02  8.61190796e+00  1.00000000e+00  0.00000000e+00]
+[-0.24048486  0.04156938  0.44580797 -0.28373146  2.22947788  4.88696321
+  0.          0.        ]
+At step  1200
+reward:  -4.735807946411731
+total rewards  -152.1086171131786
+[-0.23144598 -0.03937551 -1.31840062 -0.65521171  0.44926652  5.85463206
+  1.          1.        ]
+At step  1300
+reward:  -9.756008299586219
+total rewards  -409.5243691445646
+[ 0.60005264 -0.08559436  1.62184509 -1.43777    -0.13067359 -7.49653753
+  1.          1.        ]
+[ 0.32105713  0.02934142 -0.26938126 -0.60256423 -0.15720513  6.21370252
+  1.          0.        ]
+At step  1400
+reward:  -18.769650693414487
+total rewards  -456.7385775313661
+[ 0.66104774  0.01051078  1.2942609  -0.73514816 -1.10408175 -9.27419281
+  1.          0.        ]
+[-0.13838539 -0.01635279 -0.22945303 -1.36796093  0.23348641 -9.21086438
+  0.          1.        ]
+At step  1500
+reward:  -6.845576728816587
+total rewards  -518.1990964311482
+[-0.59232168 -0.00709757 -1.45605675  0.01707311  0.92635447  4.07831319
+  0.          1.        ]
+[ 0.46730223 -0.11512074  2.18563398 -0.94305113 -0.50040138  0.74887689
+  1.          1.        ]
+At step  1600
+reward:  -10.63721617062879
+total rewards  -499.7048724446563
+[ 4.43299866e-01 -1.11429151e-02  1.30005145e+00 -1.61764794e-01
+ -1.84521183e-01 -3.78609570e-08  1.00000000e+00  1.00000000e+00]
+[ 0.06072969 -0.01588182  0.06479496 -0.72910775  0.16445589 -7.8809967
+  0.          1.        ]
+At step  1700
+reward:  -4.816778726048911
+total rewards  -410.61422534723863
+[ 0.60039711 -0.12255477  1.5307792  -0.21515417 -0.0551972   8.18950272
+  1.          1.        ]
+[-0.37281003 -0.07607643 -0.15836989  0.00374853  0.20577604 -0.20507405
+  1.          1.        ]
+At step  1800
+reward:  -11.01801029509977
+total rewards  -291.5242255827005
+[-0.2506319  -0.04161228 -1.29780102 -1.32822842  0.28065452  7.74433899
+  1.          0.        ]
+[-0.05825443 -0.02742919 -0.15059398 -1.16741223 -0.01747769 -8.11356417
+  1.          1.        ]
+At step  1900
+reward:  17.005819217804035
+total rewards  -422.7574798918671
+[-0.20291376 -0.01602747  0.16251683 -1.35522747 -0.02068353 -8.37972832
+  1.          1.        ]
+[ 0.37015009  0.04731966  0.75131488 -0.84598817  0.02805105  8.00464694
+  1.          0.        ]
+[-1.85724735e-01 -4.94741758e-03 -2.14683950e-01 -5.48055808e-01
+  4.96382177e-01 -6.48428218e+00  0.00000000e+00  1.00000000e+00]
+At step  2000
+reward:  7.341664302744702
+total rewards  -238.11725882855947
+[-1.19232464e-01 -2.85375293e-02 -2.94224719e-02 -2.05078929e-08
+  2.30618520e-04  1.69884155e-07  1.00000000e+00  1.00000000e+00]
+[ 0.28898945 -0.02612895  0.55289503 -1.04910247 -0.02045301  7.96516355
+  1.          1.        ]
+At step  2100
+reward:  -1.6916047619827455
+total rewards  -232.90982817139246
+[-0.35575256 -0.03354499 -0.91450802 -0.91580751 -0.0721828   7.90816307
+  1.          0.        ]
+At step  2200
+reward:  -24.332356337043848
+total rewards  -506.25320940053734
+[-4.68175650e-01 -1.01597303e-01  1.22844132e-07 -6.20117299e-08
+ -2.73493797e-01 -6.46839302e-07  1.00000000e+00  1.00000000e+00]
+Landed it!
+[ 5.53842545e-02 -2.85268958e-02 -2.68882137e-08  2.24692608e-08
+ -4.64641227e-04  1.21699874e-07  1.00000000e+00  1.00000000e+00]
+Successful Landing!!!  2254
+Total successes are:  3
+[-0.45500331  0.13481637  0.19783028 -0.17992045  1.40459752 -1.00582147
+  0.          1.        ]
+At step  2300
+reward:  -10.5168537095832
+total rewards  -172.01936354344784
+[ 0.40262413  0.01157046  1.08356841 -1.40699069 -0.14412019  7.46901004
+  1.          0.        ]
+At step  2400
+reward:  -11.485804559455914
+total rewards  -448.02594787382594
+[-0.72136631  0.09212351 -1.68019025 -1.57107947  0.34765163  8.03316307
+  0.          0.        ]
+[ 0.41009235 -0.00814573 -0.40948824 -0.42551393 -0.08538045  4.60356267
+  1.          0.        ]
+At step  2500
+reward:  -9.875444707547786
+total rewards  -378.1936632793595
+[-8.43921661e-02 -2.88868364e-02 -2.77379910e-01 -1.60143672e+00
+  8.28523934e-03  8.99324735e+00  0.00000000e+00  1.00000000e+00]
+[-0.17219028 -0.01258253  0.61897786 -0.82300229  0.14039342 -6.8801384
+  0.          1.        ]
+At step  2600
+reward:  -14.423298486783668
+total rewards  -392.4352968347436
+[-0.23022113  0.01500884  0.81656019 -0.67824957  0.01968169 -5.14304225
+  0.          1.        ]
+[-0.45692477  0.09891706  0.49086376 -0.26053818  0.3076103  -2.46123823
+  0.          1.        ]
+At step  2700
+reward:  -16.374841696754057
+total rewards  -349.79546886995934
+[-0.39890924  0.00966578 -1.20979357 -1.23575422  0.30939648 -7.46575228
+  0.          1.        ]
+[-0.80514467  0.06267915 -1.23572644 -0.14701704  0.50173873 -3.09176858
+  0.          1.        ]
+At step  2800
+reward:  -15.29510716597224
+total rewards  -331.1737587567129
+[-0.68019171  0.02097316  0.02381904 -0.14467356  1.36609662 -1.12883719
+  0.          1.        ]
+[ 0.94557114 -0.08309049  2.30632766 -0.69903061 -1.30895281 -9.25417455
+  1.          0.        ]
+At step  2900
+reward:  -3.9422892182047153
+total rewards  -156.66231020114057
+[-2.22772408e-01 -2.28921731e-03 -1.63835923e+00 -8.49930233e-01
+  1.49376404e+00  8.45581881e+00  0.00000000e+00  0.00000000e+00]
+^C^C^C^C                                                                                                                                                                                                                                                               

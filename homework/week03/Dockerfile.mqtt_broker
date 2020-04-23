@@ -1,9 +1,12 @@
+# docker build -t mqtt_broker -f Dockerfile.mqtt_broker .
+# docker run --name mqtt_broker_0 --network face_detect_net -p 1883:1883 mqtt_broker
+
 FROM alpine
-WORKDIR /
-RUN echo -e "http://nl.alpinelinux.org/alpine/v3.9/main/" > /etc/apk/repositories
+# WORKDIR /
+# RUN echo -e "http://nl.alpinelinux.org/alpine/v3.9/main/" > /etc/apk/repositories
 # install mosquitto broker
-RUN echo "nameserver 8.8.8.8" > /etc/resolv.conf && \
-    apk update && \
+# RUN echo "nameserver 8.8.8.8" > /etc/resolv.conf && \
+RUN apk update && \
     apk add mosquitto
 
 # run mosquitto
