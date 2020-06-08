@@ -2,6 +2,7 @@ import numpy as np
 import cv2 as cv
 import time
 import paho.mqtt.client as mqtt
+import pickle
 
 MQTT_TOPIC = "tx2/face"
 MQTT_HOST = "172.18.0.2"
@@ -42,10 +43,20 @@ while(True):
     for (x,y,w,h) in faces:
         crop_faces = gray[y:y+h,x:x+w]
         cv.imshow("crop", crop_faces)
-        #mqttclient.publish(MQTT_TOPIC, payload=bytearray(cv.imencode('.png', crop_faces)[1]), qos=QOS, retain=False)
-        byteArr = bytearray(crop_faces)
+        cv.imwrite("face.png",crop_faces)
+
+        f=open("face.png", "rb") #3.7kiB in same folder
+        fileContent = f.read()
+        byteArr = bytearray(fileContent)
+        #byteArr = pickle.dumps(crop_faces)
+        #byteArr = bytearray(frame)
+	#byteArr = bytearray(cv.imencode('.png', crop_faces)[1])
+        #byteArr = bytearray(cv.imencode('.png', crop_faces)[0])
+        #byteArr = bytearray(crop_faces)
+        #byteArr = cv.imencode('.png', crop_faces)[0]
         mqttclient.publish(MQTT_TOPIC, payload=byteArr, qos=QOS, retain=False)
-        #time.sleep(5)
+
+        time.sleep(5)
 
     if cv.waitKey(1) & 0xFF == ord('q'):
         break

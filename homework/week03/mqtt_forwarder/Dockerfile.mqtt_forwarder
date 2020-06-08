@@ -1,5 +1,4 @@
 # sudo docker build -t mqtt_forwarder -f Dockerfile.mqtt_forwarder .
-# sudo docker run --rm -ti --name mqtt_forwarder_0 --network face_detect_net -v /forwarder:/forwarder -w /forwarder mqtt_forwarder
 # sudo docker run --rm -ti --name mqtt_forwarder_0 --network face_detect_net -w /home/forwarder mqtt_forwarder
 
 # docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container_id>
@@ -23,6 +22,6 @@ RUN apk update && \
 
 RUN mkdir /home/forwarder
 COPY forward.py /home/forwarder/forward.py
-CMD python3 /home/forwarder/forward.py
+#CMD python3 /home/forwarder/forward.py
 
 

@@ -1,6 +1,6 @@
 import paho.mqtt.client as mqtt
 
-MQTT_TOPIC = "tx2/face/#"
+MQTT_TOPIC = "tx2/face"
 QOS = 2
 
 LOCAL_MQTT_HOST = "172.18.0.2"
@@ -34,8 +34,8 @@ def on_disconnect_local(client, userdata, rc):
     client.loop_stop()
 
 
-local_mqttclient = mqtt.Client("TX2")
-remote_mqttclient = mqtt.Client("Remote")
+local_mqttclient = mqtt.Client("TX2-Forward")
+remote_mqttclient = mqtt.Client("Remote-Forward")
 
 local_mqttclient.on_connect = on_connect_local
 local_mqttclient.on_subscribe = on_subscribe
