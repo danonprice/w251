@@ -42,7 +42,9 @@ while(True):
     for (x,y,w,h) in faces:
         crop_faces = gray[y:y+h,x:x+w]
         cv.imshow("crop", crop_faces)
-        mqttclient.publish(MQTT_TOPIC, payload=bytearray(cv.imencode('.png', crop_faces)[1]), qos=QOS, retain=False)
+        #mqttclient.publish(MQTT_TOPIC, payload=bytearray(cv.imencode('.png', crop_faces)[1]), qos=QOS, retain=False)
+        byteArr = bytearray(crop_faces)
+        mqttclient.publish(MQTT_TOPIC, payload=byteArr, qos=QOS, retain=False)
         #time.sleep(5)
 
     if cv.waitKey(1) & 0xFF == ord('q'):

@@ -1,3 +1,6 @@
+# sudo docker build -t image_processor -f Dockerfile.image_processor .
+# sudo docker run --rm -ti --name image_processor_0 -v ~/Desktop/images:/home/image_processor/images --network face_detect_net -w /home/image_processor image_processor
+
 FROM ubuntu
 
 # AUTHOR bmwshop@gmail.com
@@ -43,5 +46,6 @@ RUN rm -rf /var/cache/apt
 RUN rm -rf /tmp/*.deb
 
 RUN mkdir /home/image_processor
+RUN mkdir /home/image_processor/images
 COPY process_images.py /home/image_processor/process_images.py
 CMD python3 /home/image_processor/process_images.py

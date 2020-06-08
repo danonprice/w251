@@ -1,3 +1,0 @@
-sudo docker build -t face -f  Dockerfile.face .
-
-sudo docker run -e DISPLAY=$DISPLAY --rm --privileged -v /tmp:/tmp -ti face
