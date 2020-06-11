@@ -1,5 +1,5 @@
-# sudo docker build -t image_processor -f Dockerfile.image_processor .
-# sudo docker run --rm -ti --name image_processor_0 -v ~/Desktop/images:/home/image_processor/images --network face_detect_net -w /home/image_processor image_processor
+# docker build -t image_processor -f Dockerfile.image_processor .
+# docker run --rm -ti --name image_processor_0 -v ~/Desktop/images:/home/image_processor/images --network face_detect_net -w /home/image_processor image_processor
 
 FROM ubuntu
 
