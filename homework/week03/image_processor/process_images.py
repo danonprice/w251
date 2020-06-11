@@ -1,7 +1,6 @@
 import paho.mqtt.client as mqtt
 
 output_dir = "./images"
-# https://w251-face-app.s3.us-east.cloud-object-storage.appdomain.cloud
 
 def on_connect(client, userdata, flags, rc):
     print("Connected with result code "+str(rc))
