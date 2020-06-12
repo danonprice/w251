@@ -1,0 +1,58 @@
+# Build command
+# docker build -t image_processor -f Dockerfile.image_processor .
+
+# Run command
+# docker run --rm -ti --privileged --name image_processor_0 -v ~/Desktop/images:/home/image_processor/images --network face_detect_net -w /home/image_processor image_processor
+
+FROM ubuntu
+
+RUN echo "nameserver 8.8.8.8" > /etc/resolv.conf
+
+# Install packages
+RUN apt-get update
+RUN apt-get install -y software-properties-common
+RUN apt-get update && apt-get install -y \
+	lbzip2 \
+	sudo \
+	unp \
+    curl \
+    python3.6 \
+    python3-pip \
+    python-opencv \
+    python3-opencv \
+    mosquitto \
+    mosquitto-clients \
+    vim \
+    iputils-ping \
+    python3-numpy \
+    python3-setuptools \
+    python3-wheel \
+    automake \
+    autotools-dev \
+    fuse \
+    g++ \
+    libcurl4-openssl-dev \
+    libfuse-dev \
+    libssl-dev \
+    libxml2-dev \
+    make \
+    pkg-config \
+    s3fs	
+RUN apt-get clean
+
+RUN pip3 install paho-mqtt
+RUN pip3 install numpy
+
+# Cleanup
+RUN apt-get -y autoremove
+RUN apt-get -y autoclean
+RUN rm -rf /var/cache/apt
+RUN rm -rf /tmp/*.deb
+
+RUN mkdir /home/image_processor
+RUN mkdir /home/image_processor/images
+COPY process_images.py /home/image_processor/process_images.py
+COPY .cos_creds /root/.cos_creds
+RUN mkdir /mnt/face
+CMD s3fs w251-face-app /mnt/face -o passwd_file=$HOME/.cos_creds -o sigv2 -o use_path_request_style -o url=https://s3.us-east.objectstorage.softlayer.net
+CMD python3 /home/image_processor/process_images.py
