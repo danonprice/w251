@@ -1,11 +1,22 @@
+# Build command
 # docker build -t mqtt_broker -f Dockerfile.mqtt_broker .
-# docker run --name mqtt_broker_remote --network face_detect_net -p 1883:1883 mqtt_broker
-# docker run --name mqtt_broker_remote -it --network face_detect_net -p 1883:1883 mqtt_broker
 
+# Run detached command (remote)
+# docker run -d --name mqtt_broker_remote --network face_detect_net -p 1883:1883 mqtt_broker
+
+# Run detached command (tx2)
+# docker run -d --name mqtt_broker_tx2 --network face_detect_net -p 1883:1883 mqtt_broker
+
+# Debug command (remote)
+# docker run -ti --name mqtt_broker_remote --network face_detect_net -p 1883:1883 mqtt_broker
+
+# Debug command (remote)
+# docker run -ti --name mqtt_broker_tx2 --network face_detect_net -p 1883:1883 mqtt_broker
+
+# Network check
 # docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container_id>
-
-# mqtt_broker tx2 face detector address   = 172.18.0.2
-# mqtt_broker x86 image processor address = 172.19.0.2
+# mqtt_broker tx2 address = 172.18.0.2
+# mqtt_broker x86 address = 172.19.0.2
 
 FROM alpine
 
