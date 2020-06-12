@@ -9,7 +9,7 @@
 
 # Network check
 # docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container_id>
-# 172.18.0.2
+# 172.18.0.X
 
 FROM alpine
 
