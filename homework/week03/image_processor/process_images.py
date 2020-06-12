@@ -1,36 +1,41 @@
 import paho.mqtt.client as mqtt
 
-output_dir = "./images"
+MQTT_HOST = "172.19.0.2"
+MQTT_PORT = 1883
+MQTT_TOPIC = "tx2/face"
+QOS = 2
+
+# s3 mount
+output_dir = "/mnt/face"
 
 def on_connect(client, userdata, flags, rc):
-    print("Connected with result code "+str(rc))
-    client.subscribe("tx2/face")
-
-# 9 tx2/face received!
-# ./images/face-09.png
-
-# Start counter
+    client.subscribe(MQTT_TOPIC)
+    print("Connected to",MQTT_HOST,"with result code",str(rc))
+    print("Subscribed to topic",MQTT_TOPIC)
+    
+# image counter
 img_number = 0
 
 def on_message(client, userdata, msg):
     global img_number
-    print(str(img_number),msg.topic+" received!")
     
-    if(img_number <10):
+    if(img_number < 10):
         img_name = output_dir + "/face-0" + str(img_number) + ".png"
     else:
         img_name = output_dir + "/face-" + str(img_number) + ".png"
-    print(img_name)
-    img_number = img_number + 1
-    
+
     # Write image in Object Storage
     imgFile = open(img_name, 'wb')
     imgFile.write(msg.payload)
     imgFile.close()
+    
+    print("Image",str(img_number),msg.topic+" received and saved to",img_name)
+
+    img_number = img_number + 1    
 
 client = mqtt.Client("ImageProcessor")
 client.on_connect = on_connect
 client.on_message = on_message
 
-client.connect("172.19.0.2", 1883, 600)
+client.connect(MQTT_HOST, MQTT_PORT, 600)
 client.loop_forever()
