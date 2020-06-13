@@ -1,21 +1,19 @@
 #!/bin/bash
 
-# Create a bridge:
-docker network create --driver bridge face_detect_net &
-echo "created network bridge"
+sudo
+
+# create network bridge
+sudo docker network create --driver bridge face_detect_net
+echo "Created network bridge"
 
 # run mqtt broker
-#docker run --name mqtt_broker_0 --network face_detect_net -p 1883:1883 -ti mqtt_broker
-docker run --network face_detect_net -p 1883:1883 -ti mqtt_broker &
-echo "running broker"
-
-docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container_id>
+sudo docker run -d --name mqtt_broker_tx2 --network face_detect_net -p 1883:1883 mqtt_broker
+echo "Running MQTT broker"
 
 # run mqtt message forwarder
-#docker run --name mqtt_forwarder_0 --network face_detect_net -ti mqtt_forwarder
-docker run --network face_detect_net -ti mqtt_forwarder &
-echo "running forwarder"
+sudo docker run -d --rm --name mqtt_forwarder_0 --network face_detect_net -w /home/forwarder mqtt_forwarder
+echo "Running MQTT forwarder"
 
 # run face detector
 xhost +
-docker run -e DISPLAY=$DISPLAY --rm --privileged -v /tmp:/tmp -ti face_detector &
+sudo docker run -e DISPLAY=$DISPLAY --rm --privileged -v /tmp:/tmp -ti face_detector
