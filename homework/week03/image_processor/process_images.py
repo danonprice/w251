@@ -1,12 +1,12 @@
 import paho.mqtt.client as mqtt
 
-MQTT_HOST = "172.19.0.2"
+MQTT_HOST = "mqtt_broker_remote"
 MQTT_PORT = 1883
 MQTT_TOPIC = "tx2/face"
 QOS = 2
 
-# s3 mount
-output_dir = "/mnt/face"
+# volume attached to s3 mount
+output_dir = "/home/image_processor/images"
 
 def on_connect(client, userdata, flags, rc):
     client.subscribe(MQTT_TOPIC)
@@ -18,7 +18,7 @@ img_number = 0
 
 def on_message(client, userdata, msg):
     global img_number
-    
+
     if(img_number < 10):
         img_name = output_dir + "/face-0" + str(img_number) + ".png"
     else:

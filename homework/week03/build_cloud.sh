@@ -1,6 +1,5 @@
-#!/bin/bash
+#! /bin/bash
 
-# Create a bridge:
 docker network create --driver bridge face_detect_net &
 echo "Created network bridge"
 
