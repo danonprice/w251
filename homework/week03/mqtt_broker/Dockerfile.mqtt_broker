@@ -15,8 +15,6 @@
 
 # Network check
 # docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <container_id>
-# mqtt_broker tx2 address = 172.18.0.2
-# mqtt_broker x86 address = 172.19.0.2
 
 FROM alpine
 
