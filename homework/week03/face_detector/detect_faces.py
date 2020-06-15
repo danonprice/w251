@@ -2,34 +2,23 @@ import numpy as np
 import cv2 as cv
 import time
 import paho.mqtt.client as mqtt
-import pickle
 
-MQTT_TOPIC = "tx2/face"
-MQTT_HOST = "172.18.0.2"
+MQTT_HOST = "mqtt_broker_tx2"
 MQTT_PORT = 1883
+MQTT_TOPIC = "tx2/face"
 QOS = 2
 
 def on_connect(client, userdate, flags, rc):
-    if rc == 0:
-        print("face detector connected to local broker with rc: " + str(rc))
-    else:
-        print("face detector not connected to broker")
-        client.reconnect()
+    print("Connected to",MQTT_HOST,"with result code",str(rc))
 
-def on_publish(mqttclient,userdate,msgid):
-    print("face published to local broker - ",msgid)
+def on_publish(client, userdate, msgid):
+    print("Message",msgid,"published to local server",MQTT_HOST)
 
 mqttclient = mqtt.Client("FaceDetector")
 mqttclient.on_connect = on_connect
 mqttclient.on_publish = on_publish
-mqttclient.connect(MQTT_HOST,MQTT_PORT,600) # socket.timeout: timed out
-#mqttclient.connect("iot.eclipse.org",1883,60) # socket.timeout: timed out
-#mqttclient.connect("127.0.0.1",1883,60) #ConnectionRefusedError: Connection refused
-#mqttclient.connect("localhost",1883,60) # OSError: Cannot assign requested address
-#mqttclient.connect("mosquitto",1883,60) # socket.gaierror: No address associated with hostname
-#mqttclient.connect("52.116.3.158",1883,60) # socket.timeout: timed out
+mqttclient.connect(MQTT_HOST,MQTT_PORT,600)
 mqttclient.loop_start()
-#time.sleep(5)
 
 cap = cv.VideoCapture(1)
 cascade = cv.CascadeClassifier("/home/face_detection/haarcascade_frontalface_default.xml")
@@ -45,15 +34,9 @@ while(True):
         cv.imshow("crop", crop_faces)
         cv.imwrite("face.png",crop_faces)
 
-        f=open("face.png", "rb") #3.7kiB in same folder
+        f=open("face.png", "rb")
         fileContent = f.read()
         byteArr = bytearray(fileContent)
-        #byteArr = pickle.dumps(crop_faces)
-        #byteArr = bytearray(frame)
-	#byteArr = bytearray(cv.imencode('.png', crop_faces)[1])
-        #byteArr = bytearray(cv.imencode('.png', crop_faces)[0])
-        #byteArr = bytearray(crop_faces)
-        #byteArr = cv.imencode('.png', crop_faces)[0]
         mqttclient.publish(MQTT_TOPIC, payload=byteArr, qos=QOS, retain=False)
 
         time.sleep(5)
