@@ -1,7 +1,7 @@
 import paho.mqtt.client as mqtt
 
 
-REMOTE_MQTT_HOST = "192.168.1.24"
+REMOTE_MQTT_HOST = "52.116.3.98" #"192.168.1.24"
 LOCAL_MQTT_HOST = "mqtt_broker_tx2"
 MQTT_PORT = 1883
 MQTT_TOPIC = "tx2/face"
