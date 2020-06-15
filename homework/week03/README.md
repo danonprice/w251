@@ -1,7 +1,7 @@
 
 Build Cloud Containers:
 
-  ./build_cloud.sh
+    ./build_cloud.sh
 
 ![HW03 Architecture](hw03.png)
 
