@@ -1,6 +1,6 @@
 #! /bin/bash
 
-docker network create --driver bridge face_detect_net &
+docker network create --driver bridge face_detect_net
 echo "Created network bridge"
 
 cd mqtt_broker
